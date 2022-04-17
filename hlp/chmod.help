@@ -3,3 +3,8 @@ CHMOD - Change file flags
 Usage: chmod [options] file
              +x  - Set file as exeuctable
              -x  - Set file as non-executable
+             +h  - Set file as hidden
+             -h  - Set file as not hidden
+             +w  - Set file as write-protected
+             -w  - Set file as writeable
+

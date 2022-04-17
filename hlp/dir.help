@@ -5,4 +5,4 @@ Usage: dir [options] [path]
            -s    - Sort files on size
            -n    - Sort files on name
            -d    - Sort files on date/time
-           -r    - Reverse sort oder
+           -r    - Reverse sort order

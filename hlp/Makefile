@@ -3,6 +3,7 @@ FILES=\
 	chdir.hlp\
 	chmod.hlp\
 	copy.hlp\
+    cls.hlp\
 	crc.hlp\
 	date.hlp\
 	del.hlp\
@@ -11,7 +12,8 @@ FILES=\
 	edit.hlp\
 	exec.hlp\
 	free.hlp\
-	help.help\
+    heap.hlp\
+	help.hlp\
 	hexdump.hlp\
 	himem.hlp\
 	install.hlp\
@@ -21,7 +23,9 @@ FILES=\
 	minimon.hlp\
 	mkdir.hlp\
 	patch.hlp\
+    reboot.hlp\
 	rename.hlp\
+    retval.hlp\
 	rmdir.hlp\
 	save.hlp\
 	sedit.hlp\

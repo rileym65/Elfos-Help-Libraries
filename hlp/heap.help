@@ -1,0 +1,7 @@
+HEAP - Show information about the Elf/OS Heap
+
+Usage: heap        - Show information about blocks on the Elf/OS heap.
+
+Notes: Address  - Address of the block on the heap.
+       Type     - Type of block (Permanent or Free)
+       Size     - Size of the block.
