@@ -1,0 +1,11 @@
+F_HEXOUT2 - Convert binary byte to ASCII
+
+Function: 0FF48h
+
+Args:
+  RD.0 - Byte to convert
+  RF   - Pointer to output buffer
+
+Returns:
+  RD - Consumed
+  RF - Pointer to first byte after conversion

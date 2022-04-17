@@ -1,0 +1,10 @@
+FRE()
+
+  The FRE function allows you to determine how much memory is left.  To be
+more precise, it returns the memory that is above program/variable space and
+below the stack/heap space.
+
+Example:
+
+PRINT FRE()
+     16274

@@ -1,0 +1,32 @@
+(EQ arg1 arg2)
+
+  Tests if arg1 is equal to arg2.  If they are equal T is returned, else NIL
+
+Examples:
+
+(EQ 'A 'A)
+     T
+
+(EQ 'A 'B)
+     NIL
+
+(EQ '(A B C) '(A B C))
+     NIL
+  This example may require some explanation.  EQ only considers the items
+to be equal if they point to the same memory address.  When lists are built
+they occupy new areas of memory, so in this case each of the (A B C) lists
+were located at different memory addresses, and therefore EQ sees them as
+being unequal.
+
+(SET 'A '(A B C))
+(EQ A '(A B C))
+     NIL
+  NIL for the same reason as above.
+
+(SET 'B A)
+(EQ A B)
+     T
+  This one is true because when the SET command is setting B, it is setting
+it to whatever A is bound to, which was the (A B C) from the prior exmample.
+Now A and B are pointing at the exact same spot in memory and so EQ sees
+them as being equal.

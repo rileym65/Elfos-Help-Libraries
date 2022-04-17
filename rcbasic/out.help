@@ -1,0 +1,4 @@
+OUT port,value
+
+  The OUT command allows you to write the specified value out to the
+specified port.  port can be from 1 through 7.

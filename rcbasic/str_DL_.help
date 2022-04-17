@@ -1,0 +1,12 @@
+STR$(expr)
+
+  This function will produce a string representation of a numeric expression.
+This function is used to convert numbers to strings.
+
+Example:
+
+10 A$=STR$(5*100)
+20 PRINT A$
+
+RUN
+     500

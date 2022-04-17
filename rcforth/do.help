@@ -1,0 +1,17 @@
+DO       (T S -- )        - Start of DO LOOP. Also see LOOP
+
+  DO expects to find two entries on the stack to define the limits of the
+loop.  The top of stack will be the first value for the loop and the second
+on stack is the termination value.  When the loop counter reaches the
+termination value, the loop will exit.
+
+Examples:
+
+    ok 10 0 DO I . LOOP CR
+    0 1 2 3 4 5 6 7 8 9
+    ok
+
+Note: The loop will not repeat on the final value.  Therefore if your code
+needs to do something with the final value, then you need to add 1 to the
+ending value of the loop.
+

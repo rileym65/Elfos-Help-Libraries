@@ -1,0 +1,12 @@
+<>       (a b -- c) - Check inequality, 1-unequal, 0=equal
+
+  This command takes the top two stack values, checks non-equality and
+places the results back on the stack.
+
+Examples:
+
+    4 4 <> .
+    0 ok
+
+    3 4 <> .
+    1 ok

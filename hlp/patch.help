@@ -1,0 +1,17 @@
+PATCH - Apply program patches
+
+Usage: patch file
+             file  - Patch control file
+
+Notes: The patch control file is formatted as follows:
+         Line 1      - Filename of file to be patched
+         Line 2      - Either R for relative mode, or first data line
+         Line 3 ...  - Remaining data lines
+
+       Data lines are formatted as first 4 hex digits, address to start
+       patching, followed by a list of 2 hex digits for the bytes to
+       write at the specified address.
+
+       Relative mode first reads the file's execution header to determine
+       file offsets.  The addresses used in the data lines are the memory
+       addresses instead of the file offset.

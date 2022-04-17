@@ -1,0 +1,16 @@
+DROP     (a -- )          - Drop top stack value
+
+Examples:
+
+    1 DROP .
+    stack empty
+    ok
+
+    1 2 3 +
+    DROP .
+    1 ok
+
+    9 8 7 +
+    DROP .
+    9 ok
+

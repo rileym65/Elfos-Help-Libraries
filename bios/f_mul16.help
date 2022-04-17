@@ -1,0 +1,11 @@
+F_MUL16 - Multiply 16-bit by 16-bit
+
+Function: 0FF30h
+
+Args:
+  RF - First number
+  RD - Second number
+
+Returns:
+  RB - Low word of 32-bit result
+  RC - High word of 32-bit result

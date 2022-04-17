@@ -1,0 +1,6 @@
+O_RMDIR - Remove directory (must be empty)
+Function: 327h
+  Args: RF = Pointer to pathname
+  Returns: DF=0 - Success
+           DF=1 - Failure
+                  D - Error code

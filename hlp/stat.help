@@ -1,0 +1,5 @@
+STAT - Show file statistics
+
+Usage: stat file
+
+Notes: Currently only shows size of file.

@@ -1,0 +1,18 @@
+$ - Exit program, also used for defining macros
+
+Syntax:
+  $
+  $letter commands @
+  
+  The first form of this command will terminate the current program and
+return to the OS
+
+  The second form of this command is used to define a macro start point.  A
+macros start can be any of the uppercase letters from A through Z.  Following
+the macro start is the list of commands to be executed when the macro is
+invoked, followed by a '@' end of macro command.  See the '#' command for
+more information about macros
+
+Samples:
+  $
+

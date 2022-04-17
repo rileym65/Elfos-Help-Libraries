@@ -1,0 +1,13 @@
+UNTIL    (B -- )          - Ending of BEGIN-UNTIL loop
+
+Examples:
+
+The BEGIN-UNTIL loop type is uncontrolled, the loop is executed so long as
+the top of stack is non-zero at the time of test.  The BEGIN UNTIL loop
+has its test at the end, and therefore just like DO loops, the loop will
+always be executed at least once:
+
+    ok 5 BEGIN DUP . 1 - DUP UNTIL CR
+    5 4 3 2 1
+    ok
+

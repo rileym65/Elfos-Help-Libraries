@@ -1,0 +1,42 @@
+linenum var=expr
+
+Operators:
+   +
+   -
+   *
+   /
+   <
+   =
+   >
+   &
+   |
+   ^
+
+Variables:
+  All uppercase letters and ASCII symbols, some have special meaning:
+    ! - Return address
+    " - Pointer for literal print statements
+    # - Current line number
+    $ - Single character input or output
+    % - Remainder after last division
+    & - Points to last byte of program
+    ' - Random number
+    ( - Sets start of parenthisized expression
+    ) - End
+        Remark
+        Ends array description
+    * - Points to end of memory
+    > - Save to disk
+    < - Load from disk
+    ? - Print on left side, input on right side
+    : - Start of array description
+    ; - When on end of literal print statement suppresses cr/lf
+    { - Start of memory description
+    } - End of memory description
+
+
+Speical things:
+  0      - List program
+  *=0    - Return to the OS
+  &=0    - Clear program
+

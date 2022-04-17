@@ -1,0 +1,7 @@
+XR - XMODEM receiver
+
+Usage: XR file  - Receive XMODEM data and write to specified file
+
+Note: XR will wait about 20 seconds before sending the initial NAK, the
+sender must be ready to send the file before this time elapses.  Currently
+XR will not send any additional NAKs if the first one is not responded to.

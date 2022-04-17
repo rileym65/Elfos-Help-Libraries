@@ -1,0 +1,37 @@
+BIOS API calls
+Name       Function    Description
+F_BOOT     0FF00h      Cold boot from IDE
+F_TYPE     0FF03h      Type character to terminal
+F_READ     0FF06h      Read character from terminal
+F_MSG      0FF09h      Type message to terminal
+F_INPUT    0FF0Fh      Read string from terminal
+F_STRCMP   0FF12h      Compare strings
+F_LTRIM    0FF15h      Left trim string
+F_STRCPY   0FF18h      String copy
+F_MEMCPY   0FF1Bh      Memory copy
+F_SETBD    0FF2Dh      Determine terminal baud rate
+F_MUL16    0FF30h      Multiply 16-bit by 16-bit
+F_DIV16    0FF33h      Divide 16-bit by 16-bit
+F_IDERESET 0FF36h      Reset IDE subsystem
+F_IDEWRITE 0FF39h      Write IDE sector
+F_IDEREAD  0FF3Ch      Read IDE sector
+F_INITCALL 0FF3Fh      Initialize SCALL and SRET
+F_BOOTIDE  0FF42h      Boot IDE device
+F_HEXIN    0FF45h      Convert ASCII hex to binary
+F_HEXOUT2  0FF48h      Convert binary byte to ASCII
+F_HEXOUT4  0FF4Bh      Convert binary word to ASCII
+F_TTY      0FF4Eh      Type character to terminal
+F_MINIMON  0FF54h      Jump to mini-monitor
+F_FREEMEM  0FF57h      Get memory size
+F_ATOI     0FF5Dh      Convert ASCII to integer
+F_UINTOUT  0FF60h      Convert unsigned integer to ASCII
+F_INTOUT   0FF63h      Convert signed integer to ASCII
+F_INMSG    0FF66h      Type inline message to terminal
+F_INPUTL   0FF69h      Read string from terminal
+F_ISNUM    0FF5Ah      Check for numeric character
+F_ISALPHA  0FF72h      Check for alphabetic character
+F_ISHEX    0FF75h      Check for hex character
+F_ISALNUM  0FF78h      Check for alphanumeric character
+F_ISTERM   0FF7Eh      Check for terminating character
+F_FINDTKN  0FF6Fh      Find token within a token table
+F_IDNUM    0FF7Bh      Identify ASCII symbol type

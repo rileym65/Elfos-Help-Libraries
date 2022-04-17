@@ -1,0 +1,44 @@
+ON expr GOTO line1,line2,line3,...,linen
+
+  This form of the GOTO command will evaluate the given expression to see which
+of the specified line numbers to jump to.  If the expression evaluates to 1
+then the first line will be jumped to, if the expression evaluates to 2 then
+the second line will be jumped to and so forth.  If the expression evaluates
+to less than 1 or greater than the number of line numbers given execution will
+fall through to the next statement.
+
+  Just like in standard GOTO, the line numbers can be computed.
+
+Examples:
+
+10 A=2
+20 ON A GOTO 100,200,A*100
+30 PRINT "NONE"
+99 END
+100 PRINT "100":GOTO 99
+200 PRINT "200":GOTO 99
+300 PRINT "300":GOTO 99
+
+RUN
+     200
+
+Change line 10 to:
+
+10 A=0
+
+RUN
+     NONE
+
+Change line 10 to:
+
+10 A=4
+
+RUN
+     NONE
+
+Change line 10 to:
+
+10 A=3
+
+RUN
+     300

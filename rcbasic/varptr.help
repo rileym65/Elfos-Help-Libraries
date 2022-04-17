@@ -1,0 +1,5 @@
+VARPTR(varname)
+
+  This function returns the address of the data field for the specified
+variable.  See the Rc/Basic manual for more information on how to use this
+command.

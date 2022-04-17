@@ -1,0 +1,4 @@
+O_RDLUMP - Read value from LAT entry
+Function: 32Ah
+  Args: RA = Lump number
+  Returns: RA = Value of lump

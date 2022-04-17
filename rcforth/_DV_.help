@@ -1,0 +1,13 @@
+/        (a b -- c) - Divide the top 2 stack entries
+
+  This command takes the top two stack values, devides them,  and places
+the results back on the stack.
+
+Examples:
+
+     8 4 / .
+     2ok
+
+     8 0 / .
+     -1ok       <- Note that divison by zero returns -1!
+     

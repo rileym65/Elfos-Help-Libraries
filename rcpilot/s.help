@@ -1,0 +1,17 @@
+S - Read/write Storage (memory)
+
+Syntax:
+  S:var=expr
+  S:addr,expr{,expr}{,...}
+
+  This command is used to read/write storage (memory).  In the first form
+the expression is evaluated to a memory address, that address is read and
+the result stored in the specified variable
+
+  In the second form the values of the provided expressions are written
+to memory starting at the address specified by addr
+
+Samples:
+  S:byt=30000           - Set #byt to the value stored at 30000
+
+  S:30000,1,2,3,4,5     - Write bytes to memory starting at 30000

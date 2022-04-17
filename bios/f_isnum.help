@@ -1,0 +1,10 @@
+F_ISNUM - Check for numeric ASCII character (0-9)
+
+Function: 0FF5Ah
+
+Args:
+  D - Character to check
+
+Returns:
+  DF=0 - Character is non-numeric
+  DF=1 - Character is numeric

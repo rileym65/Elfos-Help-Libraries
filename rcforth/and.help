@@ -1,0 +1,13 @@
+AND      (a b -- c) - Logically and the top 2 stack values
+
+  This command takes the top two stack values, performs a logical and
+and places the results back on the stack.
+
+Examples:
+
+    8 1 AND  .
+    0 ok
+
+    5 3 AND .
+    1 ok
+

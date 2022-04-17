@@ -1,0 +1,34 @@
+DIM var(dim[,dim,...]),...
+
+  The DIM statement allows you to create integer arrays.  Multi-dimensional
+arrays are allowed.  Each dim argument specifies the largest valid index for
+the specified array and axis.
+
+  A dimensioned variable is considered a distinct entity from is name,
+therefore A and A() do NOT refer to the same entity.  As such you can use the
+same name for both simple variables as well as arrays.
+
+Examples:
+
+10 DIM A(5)
+20 FOR A=0 TO 5:A(A)=A*2:NEXT
+30 FOR I=0 TO 5:PRINT A(I);" ";:NEXT
+
+RUN
+     0 2 4 6 8 10
+
+10 DIM A(10,10)
+20 FOR Y=1 TO 10:FOR X=1 TO 10:A(X,Y)=X*Y:NEXT:NEXT
+30 FOR Y=1 TO 10:FOR X=1 TO 10
+40 IF A(X,Y)<10 PRINT"   ";
+50 IF A(X,Y)>9 IF A(X,Y)<100 PRINT"  ";
+60 IF A(X,Y)==100 PRINT" ";
+70 PRINT A(X,Y);
+80 NEXT:PRINT:NEXT
+
+RUN
+     1  2  3  4  5  6  7  8  9  10
+     2  4  6  8 10 12 14 16 18  20
+     3  6  9 12 15 18 21 24 27  30
+    ...
+    10 20 30 40 50 60 70 80 90 100

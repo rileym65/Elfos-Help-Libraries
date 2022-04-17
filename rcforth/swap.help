@@ -1,0 +1,10 @@
+SWAP     (a b -- b a)     - Swap top 2 stack entries
+
+Examples:
+
+    1 2 SWAP . 
+    1 ok
+
+    9 8 SWAP .
+    9 ok
+

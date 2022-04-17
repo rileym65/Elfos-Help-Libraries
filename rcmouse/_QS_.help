@@ -1,0 +1,12 @@
+? -  Input integer
+
+Syntax:
+  ?
+
+  This command will request input from the user.  The input will be
+converted to an integer and stored on the stack
+
+Samples:
+  ? !         - If the user inputs 125
+    125
+ 

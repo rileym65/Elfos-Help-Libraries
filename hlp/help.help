@@ -1,0 +1,13 @@
+HELP - View help pages
+
+Usage:
+  help                - List topics contained in base help library
+  help topic          - Show help on the specified topic
+  help cat:topic      - Show help on topic from specific category
+  help cat:           - Show topics contained within a category
+  help -c             - List available categories
+
+Examples:
+  help dir           - Would show the help page for the dir command
+  help rcbasic:asc   - Would show the help page for asc from rcbasic
+  help bios:         - Show the available topics in the bios category

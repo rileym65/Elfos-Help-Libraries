@@ -1,0 +1,3 @@
+SAVE name
+
+  This command will save the current LISP environment to the specified file.

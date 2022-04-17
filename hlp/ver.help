@@ -1,0 +1,6 @@
+VER - Display version information
+
+Usage: VER file   - Show version of specified file
+       VER        - Show Elf/OS kernel version
+
+Note:  A file must have a proper VER ID block for VER to show proper data

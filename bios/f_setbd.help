@@ -1,0 +1,13 @@
+F_SETBD - Determine terminal baud rate
+
+Function: 0FF2Dh
+
+Args:
+  None
+
+Returns:
+  RE.1 - Baud constant
+
+Notes: Waits for input from terminal, expecting either <CR> or <LF>.
+  <CR> - Use full duplex mode
+  <LF> - Use half duplex mode

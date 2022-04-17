@@ -1,0 +1,15 @@
+F_IDEWRITE - Write IDE sector
+
+Function: 0FF39h
+
+Args:
+  RF - Pointer to disk transfer buffer
+  R7.0 - Value for Sector Start Register
+  R7.1 - Value for Cylinder Lo Register
+  R8.0 - Value for Cylinder Hi Register
+  R8.1 - Value for Head/Device Register
+
+Returns:
+  D - Controller Status Register
+
+Notes: When running in LBA mode, R8:R7 are the linear block address

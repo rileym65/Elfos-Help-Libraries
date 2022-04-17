@@ -1,0 +1,12 @@
+EMIT     (a -- )          - print the top of stack as an ascii character
+
+Examples: 
+
+    49 EMIT CR
+    1
+    ok 
+
+    65 EMIT CR
+    A
+    ok 
+

@@ -1,0 +1,11 @@
+F_DIV16 - Divide 16-bit by 16-bit
+
+Function: 0FF33h
+
+Args:
+  RF - First number
+  RD - Second number
+
+Returns:
+  RB - 16-bit result
+  RF - 16-bit remainder

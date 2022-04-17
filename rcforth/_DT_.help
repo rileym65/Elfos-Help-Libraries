@@ -1,0 +1,24 @@
+.        (a -- )
+
+  Print top of stack as a signed integer or print characters on terminal
+
+ 
+Examples:
+
+    5 . 
+    5 ok
+
+    1 4 . .
+    4 1 ok
+
+    2 3 4 5 + . . . .
+    9 3 2 stack empty
+    ok
+
+    ." This is text"ok   <-- the leading blank is required!
+
+
+    ." This is text" CR   <--the leading blank is required!
+    This is text
+    ok
+

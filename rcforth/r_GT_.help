@@ -1,0 +1,30 @@
+R>       ( -- a)          - move top of return stack to data stack
+
+Examples:
+
+    5 0 do r> r> dup >r . dup >r . cr loop
+    5 0
+    5 1
+    5 2
+    5 3
+    5 4
+    ok
+
+  During a DO loop, the top of the return stack is the current count, the
+the value that I retrieves, the 2nd on return stack is the ending value.
+In this example by transferring the top two entries of the return stack to
+the data stack, the ending value and current value can both be displays.
+
+  It is important that care must be taken when manipulating the return so
+as not to leave it in an inconsistant state.
+
+  It is also possible to store temporary values there, for example:
+
+    1 2 3 >R . R> . cr
+    2 3
+    ok
+
+  By moving the top of the stack to the return stack, . now printed the 2
+that was second on the stack, and then moving the top of the return stack
+back to the data stack, the next . printed the 3.
+

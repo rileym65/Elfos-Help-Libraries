@@ -1,0 +1,13 @@
+(SUB arg1 arg2)
+
+  This function subtracts its numerical arguments.
+
+Examples:
+
+(SUB '7 '2)
+     5
+
+(SET 'A '13)
+(SET 'B '6)
+(SUB A B)
+     7

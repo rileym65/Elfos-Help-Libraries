@@ -1,0 +1,10 @@
+I - Read Input port
+
+Syntax:
+  I:var=expr
+
+  This command will read one of the CDP1802's input ports and place
+the value into var.  expr must evaluate to a number from 1 through 7.
+
+Samples:
+  I:button=4   - Would read port 4 and place the result in #button

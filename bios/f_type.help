@@ -1,0 +1,10 @@
+F_TYPE - Type character to terminal
+
+Function: 0FF03h
+
+Args: D - Character to type
+      RE.1 - Baud constant
+
+Returns: None
+
+Notes: Character 0Ch is translated to <ESC>2J

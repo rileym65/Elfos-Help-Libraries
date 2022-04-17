@@ -1,0 +1,16 @@
+CLEAR
+
+  The CLEAR statement will remove all variables, variable values, strings,
+string values and arrays from the heap.  Essentially the CLEAR command will
+leave memory in the same state as if RUN had just been executed.
+
+Example:
+
+10 A=5
+20 PRINT A
+30 CLEAR
+40 PRINT A
+
+RUN
+     5
+     0

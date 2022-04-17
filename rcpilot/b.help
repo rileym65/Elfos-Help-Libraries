@@ -1,0 +1,17 @@
+B - Allocate/deallocate Block of memory
+
+Syntax:
+  B:var=expr       - Allocate block
+  B:expr           - Deallocate block
+
+  This command will allocate/deallocate memory on the heap.  The first
+form alloctes memory.  the value of expr is the number of bytes to
+allocate, the variable will be set to the address of the allocated memory.
+
+  The second form deallocates memory and expr needs to be the address
+returned by a prior allocate operation
+
+Samples:
+  B:myspace=100        - Will allocate 100 bytes of memory
+
+  B:myspace            - Will deallocate the block from the above call

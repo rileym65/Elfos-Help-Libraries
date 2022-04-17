@@ -1,0 +1,15 @@
+Usage: lbr {option} {file [file ...]}
+
+Add files to library:
+lbr a libname file [file ... ]
+
+List files in library:
+lbr l libname
+
+Extract files from library:
+lbr e libname
+
+.lbr is assumed as the filetype for libname and should NOT be included
+in the names in the above commands.  Wildcards are NOT currently supported.
+Currently E extracts all files, but eventually it will be possible to
+extract just a specified list of files.

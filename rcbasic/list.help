@@ -1,0 +1,25 @@
+LIST
+
+  This command will list the entire contents of program memory.
+
+LIST line
+
+  This command will list only the specified line number.  If the specified
+line number does not exist then an error will be generated.
+
+LIST start-
+
+  List lines starting from the specified line up to the end of the program.
+The specified line does not need to exist.  If it does not exist then the first
+line to be listed will be the next highest line number that does exist.
+
+LIST -end
+
+  This form of the list command will list from the start of the program up to
+and including the specified line number.  The ending line number need not
+exist.
+
+LIST start-end
+
+  The final form of the LIST command allows you to specify a range of lines to
+show.  Neither the start or end lines need to exist.

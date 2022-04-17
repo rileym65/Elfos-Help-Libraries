@@ -1,0 +1,5 @@
+SAVE file       ( -- )          - save Forth program
+ 
+  This command saves the current state of the FORTH environment to the
+specified file
+

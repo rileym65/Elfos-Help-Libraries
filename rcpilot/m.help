@@ -1,0 +1,20 @@
+M - Match against Accept Buffer
+
+Syntax:
+  M:option{,option}{,...}
+
+  This command attempts to find its operands within the Accept Buffer.
+Each option will be tried in turn until a match is found.  If a match is
+found the MATCHED flag will be set.  If none of the options are found in
+the Accept Buffer then MATCHED will be set false.  Each option can be
+simple text or a string variable reference.
+
+  On a successful match, the following string variables will be set:
+    $LEFT     - Text before the match
+    $MATCH    - The text that was matched
+    $RIGHT    - Text following the match
+
+Samples:
+  M:quit,exit    - Will match if 'quit' or 'exit' is found
+
+  M:hello,$hello - Will match on 'hello' or on the contents of $hello

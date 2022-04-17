@@ -1,0 +1,9 @@
+F_IDERESET - Reset IDE subsystem
+
+Function: 0FF36h
+
+Args:
+  None
+
+Returns:
+  None

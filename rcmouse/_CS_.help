@@ -1,0 +1,9 @@
+] - End of conditional execution
+
+Syntax:
+  [ ontrue ]
+  [ ontrue | onfalse ]
+
+  This command ends a conditional block of code.  See the '[' for more
+information on conditional execution
+

@@ -1,0 +1,6 @@
+NEW
+
+  NEW clears the program space of the current program.  Issue this command when
+you desire to erase the current program and begin a new one.  If this command
+is used inside of a program, it will cause memory to be cleared and program
+execution to end.

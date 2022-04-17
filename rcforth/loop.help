@@ -1,0 +1,13 @@
+LOOP     ( -- )           - End of DO LOOP. Also see DO
+
+Examples:
+
+    ok 10 0 DO I . LOOP CR
+    0 1 2 3 4 5 6 7 8 9
+    ok
+
+    10 15 DO I . LOOP CR       <-- notice that the DO LOOP executes at
+                                   least once.
+    15
+    ok
+

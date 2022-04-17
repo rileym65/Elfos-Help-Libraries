@@ -1,0 +1,10 @@
+MID$(sexpr,start,len)
+
+  This function will extract the middle portion of a string expression.  The
+resulting string will start at the specified position and be the specified
+length.
+
+Example:
+
+PRINT MID$("ABCDEFG",2,3)
+     BCD

@@ -1,0 +1,19 @@
+( - Begin loop
+
+Syntax:
+  ( commands )
+
+  This command specifies the start of a loop.  Commands between the ( and
+matching ) will be repeated continuously until the loop is exited with the
+^ command
+
+Samples:
+  1 N:
+  (
+    N. ! " "
+    N. 10 < ^
+    N. 1 + N:
+  )
+  
+    1 2 3 4 5 6 7 8 9 10
+

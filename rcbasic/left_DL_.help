@@ -1,0 +1,9 @@
+LEFT$(sexpr,expr)
+
+  This function will return the specified number of characters on the left
+side of the specified string expression.
+
+Example:
+
+PRINT LEFT$("ABCDEFG",3)
+     ABC

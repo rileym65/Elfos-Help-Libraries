@@ -1,0 +1,11 @@
+WORDS    ( -- )           - Display defined words 
+
+Examples:
+
+    WORDS .
+
+    WHILE REPEAT IF ELSE THEN VARIABLE : ; DUP DROP SWAP + - * / . U. I AND
+    OR XOR CR MEM DO LOOP +LOOP = <> BEGIN UNTIL R> >R WORDS EMIT DEPTH ROT
+    -ROT OVER @ ! C@ C! ." KEY ALLOT ERROR SEE FORGET OUT INP EF SAVE LOAD BYE
+    ok
+

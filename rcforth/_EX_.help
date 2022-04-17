@@ -1,0 +1,11 @@
+!        (v a -- )
+  Store value at address. Also see VARIABLE and SEE
+
+Example:
+    
+    VARIABLE TEST
+    ok 98 TEST !
+    ok SEE TEST
+    98
+    ok
+    

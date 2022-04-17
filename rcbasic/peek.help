@@ -1,0 +1,3 @@
+PEEK(address)
+
+  The PEEK function allows the program to retrieve a 1-byte value from memory.

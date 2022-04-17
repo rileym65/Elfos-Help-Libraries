@@ -1,0 +1,4 @@
+REM remarks
+
+  This statement marks everything else on the same line following as being
+a remark.  Program execution will continue with the next line of the program.

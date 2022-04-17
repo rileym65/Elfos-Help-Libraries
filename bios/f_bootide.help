@@ -1,0 +1,9 @@
+F_BOOTIDE - Boot from IDE device
+
+Function: 0FF42h
+
+Args:
+  None
+
+Returns:
+  None

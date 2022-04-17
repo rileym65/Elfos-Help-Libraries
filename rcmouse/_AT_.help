@@ -1,0 +1,9 @@
+@ - Exit macro
+
+Syntax:
+  @
+
+  This command when encountered will end the currently exeucting macro
+and return to the caller.  See the '#' command for more information about
+macros.
+

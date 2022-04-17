@@ -1,0 +1,5 @@
+DUMP - Dump memory contents to disk
+
+Usage: dump
+Notes: dump will prompt for the starting address, ending address, and
+       the name of the file to dump to.

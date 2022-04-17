@@ -1,0 +1,10 @@
+E - Exit subroutine/program
+
+Syntax:
+  E:
+
+  This command will exit from the current subroutine, or from the program
+if the call stack is empty
+
+Samples:
+  E:

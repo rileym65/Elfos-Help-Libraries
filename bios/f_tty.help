@@ -1,0 +1,10 @@
+F_TTY - Type character to terminal, no translations
+
+Function: 0FF4Eh
+
+Args:
+  D - Character to type
+  RE.1 - Baud constant
+
+Returns:
+  None

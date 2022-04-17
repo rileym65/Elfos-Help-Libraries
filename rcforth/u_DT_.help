@@ -1,0 +1,11 @@
+U.       (a -- )
+  print top of stack as unsigned integer
+
+Examples: 
+
+    4 U.
+    4 ok
+
+    -4 U.
+    65532 ok
+

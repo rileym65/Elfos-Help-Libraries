@@ -1,0 +1,14 @@
+VAL(sexpr)
+
+  This function will return an integer equivalent for the specified string
+expression.  This is the function used to convert a string representation
+of an integer to binary integer format.
+
+Example:
+
+10 A$="123"
+20 I=VAL(A$)
+30 PRINT I
+
+RUN
+     123

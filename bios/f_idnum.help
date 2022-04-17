@@ -1,0 +1,12 @@
+F_IDNUM - Identify symbol type
+
+Function: 0FF7Bh
+
+Args:
+  RF - Pointer to ASCII symbol
+
+Returns:
+  D=0 - Symbol is a decimal number
+  D=1 - Symbol is a hex number
+  DF=0 - Symbol is a valid number
+  DF=1 - Symbol is an invalid number

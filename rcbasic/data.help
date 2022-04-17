@@ -1,0 +1,7 @@
+DATA value,value,value,...
+
+  The DATA command provides a means to store data values inside your program.
+These values can then be read using the READ command.  The current version
+of L2 only allows for integer values in DATA statements.
+
+  See READ for examples and further information on DATA.

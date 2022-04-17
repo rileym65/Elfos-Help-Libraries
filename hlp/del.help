@@ -1,0 +1,4 @@
+DEL - Delete a file
+
+Usage: del pathname
+       pathname    - Pathname of file to delete

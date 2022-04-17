@@ -1,0 +1,5 @@
+O_WRLUMP - Write lump value into LAT table
+Function: 32Dh
+  Args: RA = Lump entry to write
+        RF = Value to write
+  Returns: None

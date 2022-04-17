@@ -1,0 +1,8 @@
+DIR - Show directory
+Usage: dir [options] [path]
+           -h    - Show hidden files
+           -l    - Show directory in long mode
+           -s    - Sort files on size
+           -n    - Sort files on name
+           -d    - Sort files on date/time
+           -r    - Reverse sort oder

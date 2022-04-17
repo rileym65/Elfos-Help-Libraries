@@ -1,0 +1,6 @@
+RUN
+
+  RUN begins execution of the program in memory.  Execution always starts with
+the lowest line number, and all variables and heap space is cleared.  This
+command may be used inside of a program in order to restart the program from
+the cleared state.

@@ -1,0 +1,30 @@
+ALLOT    (n -- )          - Increase the last defined vars storage space
+
+Example:
+   
+    mem .
+    12286 ok
+
+    variable a
+    mem .
+    19278
+
+    allot 10
+    mem .
+    19258 ok
+    
+Note: Storage is added in 16-bit units, so the example above wher I alloted
+10 units of storage to A, used 20 additional bytes of memory.
+
+  This essentially allows you to create arrays from variables.  Using the
+above examples, I have created a 10-element array from A.  You can access
+each element by modifying the address before using ! or @, for example:
+
+    10 A !
+    15 A 2 + !
+    A @ .
+    10 ok
+
+    A 2 + @ .
+    15 ok
+

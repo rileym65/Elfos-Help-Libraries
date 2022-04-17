@@ -1,0 +1,5 @@
+POKE address,value
+
+  POKE will write the specified value into the specified address in memory.
+Care must be taken when using POKE, if you POKE a value into a critical
+location it could lock the machine and require a reset.

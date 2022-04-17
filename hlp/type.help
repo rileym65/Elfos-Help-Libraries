@@ -1,0 +1,4 @@
+TYPE - Show the contents of an ASCII file
+
+Usage: type file
+            file   - file to display the contents of

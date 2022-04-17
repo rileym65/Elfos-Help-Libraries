@@ -1,0 +1,11 @@
+FLG()
+
+  This function will read the 1802's EF lines and produce a merged result of
+all 4 lines.  The result is defines as follows:
+
+  EF1 = 1
+  EF2 = 2
+  EF3 = 4
+  EF4 = 8
+
+  If EF1 and EF3 were active then FLG() would return 5.

@@ -1,0 +1,12 @@
+MINIMON - Mini monitor for changing/viewing memory
+
+Usage: minimon
+
+Notes: After minimon is loaded you will get a '>' prompt.
+       The following commands are available:
+
+         ?addr                - Display memory starting from addr
+         !addr byte byte ...  - Enter bytes into memory at specified address
+         =src dst len         - Copy len bytes from src to dst
+         @addr                - Execute at specified address
+         /                    - Return to Elf/OS

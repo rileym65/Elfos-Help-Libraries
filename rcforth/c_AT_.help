@@ -1,0 +1,18 @@
+C@       (v a -- )
+
+  Retrieve byte value at address. Also, see C!
+
+Examples:
+    
+    VARIABLE FOO
+    ok 62 FOO C!
+    ok FOO C@ EMIT CR     <-- note that we are using EMIT to print ASCII
+                              value of FOO
+    > ok
+
+    VARIABLE BAR
+    ok 62 FOO !  
+    FOO C@ . CR
+    62
+    ok   
+    

@@ -1,0 +1,7 @@
+O_OPENDIR - Open directory for reading
+Function: 315h
+  Args: RF = Pointer to pathname
+  Returns: RD = File descriptor
+           DF=0 - Success
+           DF=1 - Failure
+                  D - Error code

@@ -1,0 +1,7 @@
+O_RENAME - Rename a file
+Function: 31Bh
+  Args: RF = Source filename
+        RC = Destination filename
+  Returns: DF=0 - Success
+           DF=1 - Failure
+                  D - Error code

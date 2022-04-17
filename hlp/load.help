@@ -1,0 +1,7 @@
+LOAD - Load an executable file into memory without executing it
+
+Usage: load file
+            file   - File to load into memory
+
+Notes: After loading the file, the start address and exec address for
+       the program will be displayed.

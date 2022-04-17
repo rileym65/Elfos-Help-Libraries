@@ -1,0 +1,13 @@
+L - Set logic flag
+
+Syntax:
+  L:expr
+
+  This command will evaluate 'expr', if the result is non-zero then the
+logic flag will be set true, otherwise it will be set false
+
+Samples:
+  L:(2+3)>(1+2)         - Would set the logic flag to true
+
+  L:(2+3)<(1+2)         - Would set the logic flag to false
+

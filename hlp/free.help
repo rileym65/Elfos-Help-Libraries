@@ -1,0 +1,6 @@
+FREE - Show disk usage
+
+Usage: free
+
+Notes: This program will show the total number of AUs per disk as well
+       as how many AUs are currently free.

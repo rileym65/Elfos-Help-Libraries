@@ -1,0 +1,11 @@
+F_INPUT - Read line from terminal (fixed buffer length of 256)
+
+Function: 0FF0Fh
+
+Args:
+  RF - Pointer to input buffer
+  RE.1 - Baud constant
+
+Returns:
+  DF=0 - Input finished with <ENTER>
+  DF=1 - Input finished with <CTRL><C>

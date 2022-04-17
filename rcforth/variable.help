@@ -1,0 +1,17 @@
+VARIABLE name             - Create a variable (not allowed in functions)
+
+Examples:
+
+    VARIABLE A
+
+    15 A !
+    SEE A
+    15
+    ok
+
+    A @ .
+    15 ok
+
+    SEE B
+    err
+

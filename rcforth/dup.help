@@ -1,0 +1,11 @@
+DUP      (a -- a a)       - Duplicate top stack value
+
+Examples:
+
+    3 DUP . . CR
+    3 3
+    ok
+
+    5 DUP . . 
+    5 5 ok
+

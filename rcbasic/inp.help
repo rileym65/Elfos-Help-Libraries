@@ -1,0 +1,4 @@
+INP(port)
+
+  This function will read the specified input port and return the result. port
+may be from 1 to 7.

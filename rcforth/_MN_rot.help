@@ -1,0 +1,10 @@
+-ROT      (a b c -- c a b) - Rotate top of stack to 3rd item
+
+Examples:
+
+    1 2 3 -ROT . . .
+    2 3 1 ok
+
+    9 8 7 -ROT . . .
+    8 9 7 ok
+

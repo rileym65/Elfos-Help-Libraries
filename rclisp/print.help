@@ -1,0 +1,19 @@
+(PRINT arg)
+
+  This function prints the value of arg to the terminal.
+
+Examples:
+
+(PRINT '(A B C))
+     (A B C)
+     (A B C)
+
+(SET 'A '(C D E))
+(PRINT A)
+     (C D E)
+     (C D E)
+
+  The reason why each of these examples is printing the result twice is
+because the PRINT command is printing its argument and also returns its
+argument as a the result, the LISP eval loop always displays the last
+return value.

@@ -1,0 +1,19 @@
+(ATOM arg)
+
+  This function returns T if arg evaulates to an atom, else NIL.
+
+Examples:
+
+(ATOM 'A)
+     T
+
+(ATOM '(A B C))
+     NIL
+
+(SET 'A 'B)
+(ATOM A)
+     T
+
+(SET 'A '(B C D))
+(ATOM A)
+     NIL

@@ -1,0 +1,4 @@
+MKDIR - Make directory
+
+Usage: mkdir path
+             path  - Name of directory to create

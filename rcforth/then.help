@@ -1,0 +1,16 @@
+THEN     ( -- )           - THEN portion of IF-ELSE-THEN
+
+  THEN ends the IF-ELSE-THEN structure.  On a failed test at IF, execution
+will continue following the matching THEN.  If an ELSE block is also defined
+for the IF, then if the test succeeds, execution will follow the IF up to
+the matching ELSE block and then the ELSE block will be skipped to continue
+after the matching THEN.
+
+Examples:
+
+    ok 1 IF 1 . ELSE 2 . THEN 3 . CR
+    1 3
+
+    ok 0 IF 1 . ELSE 2 . THEN 3 . CR
+    2 3
+

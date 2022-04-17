@@ -1,0 +1,10 @@
+F_UINTOUT - Convert unsigned integer to ASCII
+
+Function: 0FF60h
+
+Args:
+  RD - Number to convert
+  RF - Buffer to store ASCII number
+
+Returns:
+  RF - Points to first byte after conversion

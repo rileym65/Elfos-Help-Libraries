@@ -1,0 +1,4 @@
+DATE - Get/set system date/time
+
+Usage: date                      - Show current date/time
+       date mm/dd/yyyy           - Set date

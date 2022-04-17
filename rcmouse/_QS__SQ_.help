@@ -1,0 +1,12 @@
+?' -  Input character
+
+Syntax:
+  ?
+
+  This command will request a single character from the user, the ASCII
+value of this character will be placed on the stack
+
+Samples:
+  ?' !         - If the user inputs A
+    65
+ 

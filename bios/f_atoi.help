@@ -1,0 +1,11 @@
+F_ATOI - Convert ASCII to integer
+
+Function: 0FF5Dh
+
+Args:
+  RF - Pointer to ASCII string
+
+Returns:
+  RD - Converted number
+  RF - Points to first non-numeric character
+  DF=1 - First character was non-numeric

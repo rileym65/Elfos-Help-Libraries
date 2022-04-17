@@ -1,0 +1,11 @@
+GOSUB expr
+
+  The GOSUB command allows normal program execution to be interrupted so that
+a subroutine could be executed.
+
+  Like GOTO, Rc/Basic allows for computed GOSUB.  Example: GOSUB B*100
+
+  If the target line of GOSUB does not exist, then an error 3 will result.
+
+  When a RETURN command is encountered, program execution will continue with
+the statement following the GOSUB.

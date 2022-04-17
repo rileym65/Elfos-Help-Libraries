@@ -1,0 +1,10 @@
+Q - Quit program
+
+Syntax:
+  Q:
+
+  This command will quit a program back to the OS, irregardless of the
+call stack
+
+Samples:
+  Q:

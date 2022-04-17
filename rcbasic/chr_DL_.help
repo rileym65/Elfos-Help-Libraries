@@ -1,0 +1,12 @@
+CHR$(expr)
+
+  This function takes the expression and produces a 1 character string that
+is the ASCII character for the specified expression.
+
+Example:
+
+10 A$=CHR$(65)
+20 PRINT A$
+
+RUN
+     A

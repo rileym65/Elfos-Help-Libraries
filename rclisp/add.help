@@ -1,0 +1,13 @@
+(ADD arg1 arg2)
+
+  This function produces the addition of its numeric arguments.
+
+Examples:
+
+(ADD '3 '4)
+     7
+
+(SET 'A '5)
+(SET 'B '10)
+(ADD A B)
+     15

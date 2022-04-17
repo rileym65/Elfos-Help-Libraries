@@ -1,0 +1,50 @@
+INPUT ["prompt";]var[,var,...]
+
+  This statement allows a program to get input from the user.  If the optional
+prompt is specified, it will be printed before the program queries for input.
+
+  Multiple variables may be input at the same time.
+
+  The expression evaluator is used when reading input values, therefore you
+can specify expressions for input values.
+
+  If not enough values were given for the number of variables specified in the
+INPUT command, then multiple queires will be made of the user.
+
+  If the user gives more values than INPUT is expecting, remaining values will
+be read by the following INPUT commands.
+
+Examples:
+
+10 B=5
+20 INPUT "VALUE=";A
+30 PRINT A
+
+RUN
+     VALUE=? 10
+     10
+
+RUN
+     VALUE=? B*5
+     25
+
+10 INPUT "VALUES=";A,B
+20 PRINT A,B
+
+RUN
+     VALUES=? 4,5
+     4       5
+
+10 INPUT "VALUE 1=";A
+20 INPUT "VALUE 2=";B
+30 PRINT A,B
+
+RUN
+     VALUE 1=? 5
+     VALUE 2=? 7
+     5      7
+
+RUN
+     VALUE 1=? 5,7
+     VALUE 2=
+     5      7

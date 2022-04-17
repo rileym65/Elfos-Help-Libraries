@@ -1,0 +1,19 @@
+V - Get Variable pointer
+
+Syntax:
+  V:var=ivar
+  V:var=$var
+
+  This command allows to get the address of where a variable's data is
+actually stored.  Integer variables are statically allocated and once a
+variable has been defined, its data will always be in the same place.  This
+is not true for string variables.  The data for a string variable is
+stored on the heap and can be moved anytime that a string variable is
+assigned a new value, as such when using S to read/write memory belonging
+to a string variable, you should always use V beforehand to make sure
+you have the current address of the actual data
+
+Samples:
+  V:i=a         - Would point to where #a stores its data in static memory
+
+  V:i=$a        - Would point to where $a stores its data on the heap

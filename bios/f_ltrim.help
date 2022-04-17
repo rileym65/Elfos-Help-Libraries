@@ -1,0 +1,9 @@
+F_LTRIM - Left trim string
+
+Function: 0FF15h
+
+Args:
+  RF - Pointer to string
+
+Returns:
+  RF - Points to first non-whitespace character

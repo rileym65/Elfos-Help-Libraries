@@ -1,0 +1,17 @@
+KEY      ( -- v)     - Read a character from the keyboard and place on stack
+
+Examples: 
+
+    KEY .
+    A65 ok <-- input from keyboard is A which is a 65 in ASCII code
+
+    KEY EMIT CR
+    11     <-- input from keyboard is 1 and output is an integer
+    ok 
+
+    KEY EMIT CR
+    AA     <-- input from keyboard is A and ouput is an ASCII A
+    ok 
+
+Note: KEY will wait for a key to be pressed
+

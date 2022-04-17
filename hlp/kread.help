@@ -1,0 +1,5 @@
+KREAD - Kernel image reader
+
+Usage: KREAD file  - Read currently installed kernel and write to file
+
+Note: The file created by KREAD is suitable for use with the SYS command

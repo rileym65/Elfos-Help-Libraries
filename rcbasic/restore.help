@@ -1,0 +1,30 @@
+RESTORE [line]
+
+  The RESTORE command will reset the DATA pointer used by the READ statement.
+If no line is specified, then the DATA pointer will be set to the first data
+item of the first DATA statement in the program.
+
+  If a line number is specified then the DATA pointer will be set to the first
+item of the first DATA statement line that is on or later than the specified
+line.  Note, it is not necessary to specify the DATA line number exactly
+it can be a lower number than what you want to set.  The line referenced by
+the RESTORE command must however exist even if it is not a DATA line.  If the
+line does not exist at all an error 3 will result.
+
+Example:
+
+10 DATA 1,2,3,4,5
+20 DATA 10,11,12,13
+30 READ A,B,C
+40 PRINT A,B,C
+50 RESTORE
+60 READ A,B,C
+70 PRINT A,B,C
+80 RESTORE 20
+90 READ A,B,C
+100 PRINT A,B,C
+
+RUN
+     1      2      3
+     1      2      3
+     10     11     12

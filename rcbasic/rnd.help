@@ -1,0 +1,5 @@
+RND(range)
+
+  The RND function will generate a random number from 0 to 1 less than the
+specified range.  For example if RND(6) were issued, it would return a random
+number from 0 to 5.

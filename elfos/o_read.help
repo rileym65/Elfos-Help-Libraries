@@ -1,0 +1,9 @@
+O_READ - Read from file
+Function: 309h
+  Args: RD = Pointer to file descriptor
+        RF = Pointer to buffer
+        RC = Count of bytes to read
+  Returns: RC = Count of bytes read
+           DF=0 - Success
+           DF=1 = Failure
+                  D - Error code

@@ -1,0 +1,9 @@
+O_WRITE - Write to file
+Function: 30Ch
+  Args: RD = Pointer to file descriptor
+        RF = Pointer to bytes to write
+        RC = Count of bytes to write
+  Returns: RC = Count of bytes written
+           DF=0 - Success
+           DF=1 - Failure
+                  D - Error code

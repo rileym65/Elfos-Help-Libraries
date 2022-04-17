@@ -1,0 +1,15 @@
+Error Codes:
+------------
+0     Break was pressed (IN button)
+1     Statement not allowed in direct mode
+2     Syntax error
+3     Invalid line number
+4     Return without gosub
+5     Value error
+6     File error
+7     INVLP
+8     NEXT without FOR
+9     No DATA for READ
+10    Out of memory
+11    Bad dimension
+12    Unsupported feature

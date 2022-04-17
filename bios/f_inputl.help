@@ -1,0 +1,12 @@
+F_INPUTL - Read string from terminal (variable buffer length)
+
+Function: 0FF69h
+
+Args:
+  RF - Pointer to input buffer
+  RC - Maximum allowed input characters
+  RE.1 - Baud constant
+
+Returns:
+  DF=0 - Input finished with <ENTER>
+  DF=1 - Input finished with <CTRL><C>

@@ -1,0 +1,20 @@
+(CDR expr)
+
+  Returns the cdr, or tail, of a list.
+
+Examples:
+
+(CDR '(A B C))
+     (B C)
+
+(CDR '((A B) (C D)))
+     ((C D))
+
+(CDR '(A))
+     ()
+
+(CDR '())
+     NIL
+
+(CDR 'A)
+     NIL

@@ -1,0 +1,9 @@
+DEPTH    ( -- a)          - Get number of items on stack
+
+Example:
+    
+    4 5 6 DEPTH . 
+    3 ok 
+
+Note: DEPTH does not include its own answer in the stack depth
+

@@ -1,0 +1,20 @@
+A - Accept user input
+
+Syntax:
+  A:{var}{,var}{,...}
+
+  This command accepts input from the terminal.  Input is always accepted
+into the Accept-Buffer.  If an operand is provided, the input data will
+also be written into the variable specified by the operand.  Variables
+provided as operands may be either string or integer variables.  If multiple
+operand variables are provided there will be an input cycle for each
+variable specified.  Variable types can be mixed in the operand list
+
+Samples:
+  A:a,$b,c     - Accept an integer value, a string, and another integer
+
+  A:a          - Accept a single integer value
+
+  A:$b         - Accept a single string value
+
+  A:           - Accept into the Accept-Buffer only

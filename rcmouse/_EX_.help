@@ -1,0 +1,13 @@
+! - Pop number from stack and print it
+
+Syntax:
+  !
+
+  This command will pop the top value of the stack and print its numeric
+value.
+
+Samples:
+  12 !
+    12
+
+

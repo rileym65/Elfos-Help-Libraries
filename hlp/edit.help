@@ -1,0 +1,30 @@
+EDIT - Edit an ASCII file
+
+Usage: edit file
+            file - File to edit.  The file will be created
+                   if it does not exist.
+
+Notes: Once edit is running you will get a '>' prompt.
+       The following edit commands are available:
+
+       B      - Move to bottom of buffer
+       D      - Move down one line
+     ,nD      - Move down n lines
+       Itext  - Insert text at current position
+      nItext  - Move to line n and then insert text
+       I      - Insert text until <ctrl><c> is pressed
+      nI      - Insert text at line n until <ctrl><c> is pressed
+      nG      - Make line n the current line
+       K      - Kill (delete) the current line
+      nK      - Move to line n and then delete it
+     ,nK      - Kill n lines starting from current line
+    n,mK      - Kill m lines starting from line n, n becomes current line
+       P      - Print the current line
+      nP      - Print line n
+     ,nP      - Print n lines starting from current line
+    n,mP      - Print m lines starting from line n
+       Q      - Quit to Elf/OS
+       S      - Save
+       T      - Move to top line of buffer
+       U      - Move up one line
+     ,nU      - Move up n lines

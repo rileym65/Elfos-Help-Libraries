@@ -1,0 +1,14 @@
+O_SEEK - Change file position
+Function: 30Fh
+  Args: RD = Pointer to file descriptor
+        R8 = High word of seek address
+        R7 = Low word of seek address
+        RC = Seek from:
+             0 - Beginning of file
+             1 - Current position
+             2 - End of file
+  Returns: R8 = High word of current file pointer
+           R7 = Low word of current file pointer
+           DF=0 - Success
+           DF=1 - Failure
+                  D - Error code

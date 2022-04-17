@@ -1,0 +1,12 @@
+;
+
+  End a function. Also see : to Start a function
+
+Example:  
+
+    : STARS 0 DO 42 EMIT LOOP ;
+   
+    ok 5 STARS CR
+    *****
+    ok
+

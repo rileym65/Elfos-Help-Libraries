@@ -1,0 +1,11 @@
+[LET] varname = value
+
+  LET allows values to be assigned to variables.
+
+  The LET keyword is actually optional in Rc/Basic.
+
+Examples:
+
+LET A=5*(2+7)
+
+A=10*B

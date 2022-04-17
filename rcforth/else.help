@@ -1,0 +1,16 @@
+ELSE     ( -- )           - ELSE portion of IF-ELSE-THEN
+
+  When IF finds 0 on the stack, execution begins after the matching THEN
+unless an matching ELSE block exists.  
+
+  If a matching ELSE is found before the matching THEN on a failed IF test,
+the ELSE code block will be executed
+   
+Examples:
+
+    ok 1 IF 1 . ELSE 2 . THEN 3 . CR
+    1 3
+
+    ok 0 IF 1 . ELSE 2 . THEN 3 . CR
+    2 3
+

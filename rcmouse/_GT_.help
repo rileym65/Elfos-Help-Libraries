@@ -1,0 +1,19 @@
+> - Check for greater than
+
+Syntax:
+  >
+
+  This command will pop two values from the stack, if the second on stack
+is greater than the top of stack then 1 will be pushed back to the stack,
+otherwise 0 will be pushed back
+
+Syntax:
+  5 4 > !
+    1
+  
+  4 5 > !
+    0
+
+  5 5 > !
+    0
+

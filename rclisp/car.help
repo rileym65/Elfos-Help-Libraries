@@ -1,0 +1,17 @@
+(CAR arg)
+
+  Returns the car, or head, of a list.
+
+Examples:
+
+(CAR '(A B C))
+     A
+
+(CAR '((A B) (C D)))
+     (A B)
+
+(CAR 'A)
+     NIL
+
+(CAR '())
+     NIL

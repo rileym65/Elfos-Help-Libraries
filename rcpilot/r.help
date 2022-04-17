@@ -1,0 +1,10 @@
+R - Remark
+
+Syntax:
+  R:text
+
+  This command begins a remark.  Remarks can be placed in a program to
+provide documentation.  Remarks are always ignored by the interpreter
+
+Samples:
+  R:This statement is a remark

@@ -1,0 +1,25 @@
+J - Jump
+
+Syntax:
+  J:*label
+  J:expr
+  J:expr,*label{,*label}{,...}
+
+  This command alters the flow of execution and transfers control to the
+line with the specified label.  Note that label names must always begin
+with a * character.  The first form is a simple unconditional jump to
+the specified label
+
+  The second form evaluates 'expr' and then jumps to the line equal to
+the result
+
+  The third form evaluates 'expr' and then jumps based upon the result.
+If the result of expr is 1 then the first label will be jumped to, if the
+result is 2 the second label jumped to, and so forth.  If the result is
+0 or greater than the number of labels then control falls through to
+the next statement and no jump is made
+
+Samples:
+  J:*loop            - Jump to the line labeled '*loop'
+
+  J:i,*l1,*l2,*l3    - If i was 2 then the jump would go to *l2

@@ -1,0 +1,11 @@
+(LESSP arg1 arg2)
+
+  This function returns T if arg1 is numerically less than arg2.
+
+Examples:
+
+(LESSP '4 '8)
+     T
+
+(LESSP '8 '4)
+     NIL

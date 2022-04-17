@@ -1,0 +1,13 @@
+XOR      (a b -- c) - Logically XOR  the top 2 stack values
+
+  This command takes the top two stack values, performs a logical XOR and
+places the results back on the stack.
+
+Examples:
+
+    7 7 XOR  .
+    0 ok
+
+    127 1 XOR .
+    126 ok
+

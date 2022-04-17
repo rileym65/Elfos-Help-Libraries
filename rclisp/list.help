@@ -1,0 +1,17 @@
+(LIST arg1 arg2 ... argn)
+
+  This function will produce a list of all of its arguments.
+
+Examples:
+
+(LIST 'A 'B)
+     (A B)
+
+(LIST 'A 'B 'C 'D)
+     (A B C D)
+
+(LIST '(A B) '(C D))
+     ((A B) (C D))
+
+(LIST '(A B) 'C)
+     ((A B) C)

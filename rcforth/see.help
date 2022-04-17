@@ -1,0 +1,20 @@
+SEE name                  - See what is bound to a name
+
+Examples:
+
+    VARIABLE A
+
+    SEE A
+    15
+    ok
+
+    SEE B
+    err
+
+    : STARS 0 DO 42 EMIT LOOP ;
+    ok
+
+    SEE STARS
+    : STARS 0 DO 42 EMIT LOOP ;
+    ok
+   

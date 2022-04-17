@@ -1,0 +1,12 @@
+* - Multiplication
+
+Syntax:
+  *
+
+  This command will pop the top two values from the stack and multiply them
+together, placing the result back on the stack
+
+Samples:
+  4 5 * !
+    20
+

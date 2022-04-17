@@ -1,0 +1,13 @@
+- - Subtraction
+
+Syntax:
+  -
+
+  This command will pop the top two values from the stack, subtracting the
+top of stack from the second on stand and placing the results back onto
+the stack
+
+Samples:
+  7 2 - !
+    5
+  

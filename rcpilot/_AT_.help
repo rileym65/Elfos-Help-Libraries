@@ -1,0 +1,16 @@
+@ - Call machine language subroutine
+
+Syntax:
+  @:var=addr{,expr}
+
+  This command will call an assembly language subroutine.  The routine
+called is at location addr.  If expr is specified then it will be 
+evaluated and placed into the RF register before the call.  Upon return
+from the machine language routine, the contents of RF will be stored
+into the specified variable.
+
+  Note, the machine language routine must preserve the stack as as well
+as registers R1 through RA, and RE.1.  Registers RB, RC, RD need not be
+preserved and RF should contain any return result.  The routine is called
+using standard SCALL technique and should return with the standard SRET
+technique.

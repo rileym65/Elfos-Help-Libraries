@@ -1,0 +1,6 @@
+O_EXEC - Execute a program
+Function: 31Eh
+  Args: RF = Pointer to command line
+  Returns: DF=0 - Success
+           DF=1 - Failure
+                  D - Error code

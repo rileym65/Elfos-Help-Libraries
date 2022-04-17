@@ -1,0 +1,4 @@
+BYE       ( -- )          - end Forth program
+
+    This command will exit from Forth and return to the host.
+

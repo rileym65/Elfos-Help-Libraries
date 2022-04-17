@@ -1,0 +1,35 @@
+FORGET name               - Remove a variable or function
+ 
+Example:
+
+    : STARS 0 DO 42 EMIT LOOP ;
+    : PYRAMID 0 DO I STARS CR LOOP ;
+    5 PYRAMID
+    *
+    *
+    **
+    ***
+    ****
+    OK
+
+    FORGET STARS
+    OK
+    5 PYRAMID
+    ERR            <-- STARS NO LONGER EXISTS, SO CANNOT BE FOUND
+
+    : STARS 0 DO 42 42 EMIT EMIT LOOP ;
+    5 PYRAMID
+    **
+    **
+    ****
+    ******
+    ********
+
+  This example demonstrates an important feature of Rc/Forth.  FORGET only
+forgets the specified word, unlike other Forths which erase the specified
+word and everything defined after it.  Rc/Forth uses late binding when
+referring to defined functions.  This allows you to replace a dependent
+function without redoing other words that use it.  In this example we
+replaced the STARS function that prints 2 stars instead of just 1, and
+the PYRAMID function automatically used the new definition
+

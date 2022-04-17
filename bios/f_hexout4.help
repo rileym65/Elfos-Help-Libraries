@@ -1,0 +1,11 @@
+F_HEXOUT4 - Convert binary word to ASCII
+
+Function: 0FF4Bh
+
+Args:
+  RD - Number to convert
+  RF - Pointer to output buffer
+
+Returns:
+  RD - Consumed
+  RF - Pointing to first byte after conversion

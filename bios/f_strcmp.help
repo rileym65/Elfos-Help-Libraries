@@ -1,0 +1,12 @@
+F_STRCMP - Compare strings
+
+Function: 0FF12h
+
+Args:
+  RF - Pointer to string_1
+  RD - Pointer to string_2
+
+Returns:
+  D=00 - string_1 = string_2
+  D=FF - string_1 < string_2
+  D=01 - string_1 > string_2

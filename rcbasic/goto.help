@@ -1,0 +1,27 @@
+GOTO expr
+
+  The GOTO command changes the order of execution.  Normally a program is
+executed from the lowest numbered line to the highest numbered line.  When
+a GOTO is encountered a jump is taken to the specified line.
+
+  Rc/Basic allows for computed GOTO, so expr can be a standard expression that
+evaluates to a line number.  Example: GOTO A*1000
+
+  If the target line of a GOTO, either explicit or computed, does not exist
+then an error 3 will result and program execution will be terminated.
+
+  GOTO can also be used in direct mode in order to start a program from a
+specified line.  For example:
+
+10 A=5
+20 PRINT A
+
+RUN
+     5
+
+A=100
+GOTO 20
+     100
+
+  Note that when GOTO is used to start execution that variable and heap space
+are not cleared like it is when using RUN to start a program.

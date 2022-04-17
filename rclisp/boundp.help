@@ -1,0 +1,24 @@
+(BOUNDP arg)
+
+  Returns T if arg is an atom and bound, else NIL.
+
+Examples:
+
+(SET 'A 'B)
+(BOUNDP 'A)
+     T
+(BOUNDP A)
+     NIL
+  This example might require some explanation.  In the first test of 'A,
+the A atom is bound to the B atom, so BOUNDP reports T.  In the second
+one A evaluates to B and so now BOUNDP is testing B, which is not bound
+so NIL is returnd.
+
+(SET 'A 'B)
+(BOUNDP 'A)
+     T
+(SET 'A (NIL))
+(BOUNDP 'A)
+     NIL
+  In this example, setting an atom to NIL unbinds it, this is why BOUNDP
+reports NIL in the second case.  An atom bound to NIL is not bound.

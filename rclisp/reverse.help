@@ -1,0 +1,11 @@
+(REVERSE arg)
+
+  This function will produce a list in reverse order.
+
+Examples:
+
+(REVERSE '(A B C D))
+     (D C B A)
+
+(REVERSE '((A B C) (D E F)))
+     ((D E F) (A B C))

@@ -1,0 +1,14 @@
+MEM      ( -- a)          - return amount of free memory
+
+Examples:
+
+    MEM .
+    19670 ok
+
+    1 2 3 4 5 6 7 8 9 10 + 
+    MEM .
+    19652 
+ 
+Note: The redution in memory is due to the allocation of memory for the
+      values pushed onto the stack.
+    

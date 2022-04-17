@@ -1,0 +1,10 @@
+O - Write to Output port
+
+Syntax:
+  O:port,expr
+
+  This command will evaluate expr and write it to the port that 'port'
+evaluates to.  port must evaluate to a number from 1 through 7
+
+Samples:
+  O:4,8    - Would write value 8 to port 4

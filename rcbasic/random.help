@@ -1,0 +1,5 @@
+RANDOM
+
+  This statement allows the random number generator to be reseeded.  The user
+will be prompted for a value to reseed the generator with.  The same seed value
+will always generate the same string of random numbers.

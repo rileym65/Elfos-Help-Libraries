@@ -1,0 +1,15 @@
+(NULL arg)
+
+  This function return T if arg is NIL, else NIL.
+
+Examples:
+
+(NULL (T))
+     NIL
+
+(NULL (NIL))
+     (T)
+
+(NULL '(A B C))
+     NIL
+  In this last example, the arg of (A B C) is not NIL, so NIL is returned.

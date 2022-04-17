@@ -1,0 +1,26 @@
+(CONS arg1 arg2)
+
+  This command creates a new consing cell that where the car of the cell
+will be arg1 and the cdr of the cell will be arg2.  This is how you would
+add a new item to the beginning of a list.
+
+Examples:
+
+(CONS 'A '(B C D))
+     (A B C D)
+
+(CONS '(A B) '(C D))
+     ((A B) C D)
+
+(CONS 'A 'B)
+     (A . B)
+
+(CONST '(A B) 'C)
+     ((A B . C)
+
+  The last two example may require explanation.  A normal list always ends
+with a NIL, not an atom.  In the last two examples we create a new consing
+cell where the cdr was not a list, but an atom, which means the list is
+no longer a standard list, it does not end in NIL.  This type of list is
+called a dotted pair.  Dotted pairs in many ways can be used like standard
+lists, but CDR functions will act slightly differently.

@@ -1,0 +1,11 @@
+F_MEMCPY - Memory copy
+
+Function: 0FF1Bh
+
+Args:
+  RF - Pointer to source address
+  RD - Pointer to destination address
+  RC - Count of bytes to copy
+
+Returns:
+  None

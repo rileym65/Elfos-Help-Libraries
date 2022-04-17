@@ -1,0 +1,26 @@
+T - Type to terminal
+
+Syntax:
+  T:text
+
+  This command types all text following the : to the terminal.  Several
+characters have special meaning when they are encountered:
+   \e      - output ASCII escape code
+   \r      - output ASCII CR code
+   \n      - output ASCII LF code
+   \t      - output ASCII horizontal tab code
+   \b      - output ASCII bell code
+   \       - will output the code following, so \$ would output $
+   $var    - will output the contents of the reference string variable
+   #var    - will output the value of the referenced integer variable
+   {expr}  - will output the value of the expression
+   \       - on the end of a line will suppress auto cr/lf
+
+Samples:
+  T:Straight text
+
+  T:Value of \#i is #i
+
+  T:Contents of \$i is $i
+
+  T:Value of 2+3 is {2+3}

@@ -1,0 +1,8 @@
+RENAME - Rename a file
+
+Usage: rename old new
+              old  - Old filename
+              new  - New filename
+
+Notes: rename cannot be used to move a file from one directory to another,
+       you must use the copy command to move a file.

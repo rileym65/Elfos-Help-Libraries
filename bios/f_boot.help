@@ -1,0 +1,7 @@
+F_BOOT - Cold boot from IDE device
+
+Function: 0FF00h
+
+  Args: None
+
+  Returns: None

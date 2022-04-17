@@ -1,0 +1,16 @@
+@        (a -- v)
+  Retrieve value from address. Also see ! for setting a variable
+
+Examples:
+    
+    VARIABLE FOO
+    ok 98 FOO !
+    ok FOO @ .
+    98 ok
+
+    VARIABLE BAR
+    ok 1000 FOO !  
+    FOO @ . CR
+    1000
+    ok   
+    

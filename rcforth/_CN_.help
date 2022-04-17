@@ -1,0 +1,23 @@
+: name 
+
+  Create a function. Also see ; to end of function
+
+Examples:
+   
+    : STARS 0 DO 42 EMIT LOOP ;
+   
+    ok 5 STARS CR
+    *****
+    ok
+
+    : PYRAMID 1 DO I STARS CR LOOP ;   <- Note a function is calling
+                                          another function
+    ok
+
+    ok 5 PYRAMID
+    *
+    **
+    ***
+    ****
+    ok
+    

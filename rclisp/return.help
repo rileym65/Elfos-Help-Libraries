@@ -1,0 +1,8 @@
+(RETURN arg)
+
+  This function simply returns its argument.
+
+Examples:
+
+(RETURN '(A B C))
+     (A B C)

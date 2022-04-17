@@ -1,0 +1,6 @@
+O_MKDIR - Make directory
+Function: 321h
+  Args: RF = Pointer to pathname
+  Returns: DF=0 - Success
+           DF=1 - Failure
+                  D - Error code

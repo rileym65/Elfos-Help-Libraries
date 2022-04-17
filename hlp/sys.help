@@ -1,0 +1,11 @@
+SYS - Install kernel
+
+Usage: SYS file   - Write the kernel image from file to the system
+
+Note: Extreme care must be used when using this command.  If file does not
+      contain a valid kernel image then your disk will become unbootable.
+      If an error occurs during the process then your disk will likely
+      become unbootable.
+      It would be a good idea to use KREAD to read your existing kernel
+      before using SYS to write a new one, just in case you need to return
+      to the prior kernel version.

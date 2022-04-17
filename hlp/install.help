@@ -1,0 +1,7 @@
+INSTALL - Package installer
+
+Usage: install
+
+Notes: This program is similar to option 4 of the Elf/OS installer.  It
+       reads an INSTALL package header located at 8000h in memory and asks
+       to install each program found in the header.

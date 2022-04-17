@@ -1,0 +1,18 @@
+(EVAL arg)
+
+  This function applies the LISP evaluator to arg.
+
+Examples:
+
+(EVAL '(CAR '(A B C)))
+     A
+
+(SET 'A '(CDR '(A B C)))
+(EVAL A)
+     (B C)
+(EVAL 'A)
+     (CDR '(A B C))
+  In the first EVAL, all arguments that are not quoted are already EVAL'd
+so A will produce the (CDR '(A B C)) which EVAL then evaluates to get (C D).
+In the second case, since A is quoted it is not evaluated first so now
+EVAL will simply produce what A is bound to.

@@ -1,0 +1,8 @@
+Rc/Mouse defines 512 variables, indexed from 0 through 511.  The uppercase
+letters A-Z when encountered in a program will push the values 0-25, 
+corresponding to the letter's position in the alphabet onto the stack.  In
+this way the first 26 variables are named from A-Z, the remaining variables
+can only be accessed by address
+
+The lowercase letters will also translate to 0-25 and are therefore not
+seperate variable indexes from the uppercase letters

@@ -1,0 +1,27 @@
+IF expr [THEN] statement
+
+  The IF command allows for descisions within a program.  In Rc/Basic the
+THEN is optional.  If when expr is evaluated and results in a non-zero
+value the statements following THEN will be executed.  If the results of the
+expression are zero then execution will follow through to the line following
+the line containing the IF statement.
+
+Example:
+
+10 A=5
+20 IF A<10 PRINT "A":PRINT"B"
+30 PRINT "C"
+
+RUN
+     A
+     B
+     C
+
+Change line 10 to:
+
+10 A=100
+
+RUN
+     C
+
+  Note:  IF/THEN statements can be nested.

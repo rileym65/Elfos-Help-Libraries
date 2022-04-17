@@ -1,0 +1,9 @@
+F_READ - Read character from terminal
+
+Function: 0FF06h
+
+Args:
+  RE.1 - Baud constant
+
+Returns:
+  D - Read character

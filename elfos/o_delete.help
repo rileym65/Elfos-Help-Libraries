@@ -1,0 +1,6 @@
+O_DELETE - Delete a file
+Function: 318h
+  Args: RF = Pointer to filename
+  Returns: DF=0 - Success
+           DF=1 - Failure
+                  D - Error code

@@ -1,0 +1,10 @@
+F_ISHEX - Check for hex character (0-9,A-F,a-f)
+
+Function: 0FF75h
+
+Args:
+  D - Character to check
+
+Returns:
+  DF=0 - Character is non-hex
+  DF=1 - Character is hex

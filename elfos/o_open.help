@@ -1,0 +1,11 @@
+O_OPEN - Open file
+Function: 306h
+  Args: RF = Pointer to pathname
+        RD = Pointer to file descriptor, DTA pre-filled out
+        R7 = Flags
+             1 - Create if file does not exist
+             2 - Truncate file
+             4 - Open for append
+  Returns: DF=0 - Success
+          DF=1 - Failure
+                 D - Error code

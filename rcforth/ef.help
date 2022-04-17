@@ -1,0 +1,19 @@
+EF        ( -- v )          - Read status of EF input lines
+
+  This function reads the status of all 4 EF inputs and produces a sum
+of their states.  The EF lines will add the following values to the sum:
+
+    EF1  - 1
+    EF2  - 2
+    EF3  - 4
+    EF4  - 8
+
+Example:
+    
+    EF . CR
+    0
+    ok
+
+Note: The result from EF will depend on what hardware is attached to your
+machine and what they are currently asserting on the 1802 EF lines.
+

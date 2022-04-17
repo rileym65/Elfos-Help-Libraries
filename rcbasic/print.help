@@ -1,0 +1,41 @@
+PRINT expr_list
+
+  The print command allows a program to output values to the terminal.  The
+expression list may consist of no elements or multiple elements.  When no
+expressions are given, PRINT will just move the cursor down a line on the
+terminal.
+
+  When multiple expressions are provided, each expression must be separated
+by either a , or ; character.  Whenever a , is encountered, a <TAB> character
+is sent to the terminal which will tell the terminal to move to the cursor
+to the next tab stop.  When ; is encountered, no cursor movement will occur.
+
+  Both , and ; can also be the last character of the expression list and will
+have the effect of preventing the automatic carriage return at the end of the
+PRINT statement.
+
+Examples:
+
+10 PRINT "ANSWER=";5+7
+
+     ANSWER=12
+
+10 PRINT "A","B";"C"
+
+     A      BC
+
+10 PRINT "A"
+20 PRINT "B"
+
+     A
+     B
+
+10 PRINT "A";
+20 PRINT "B"
+
+     AB
+
+10 PRINT "A",
+20 PRINT "B"
+
+     A      B

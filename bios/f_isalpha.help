@@ -1,0 +1,10 @@
+F_ISALPHA - Check for alphabetic character (A-Z,a-z)
+
+Function: 0FF72h
+
+Args:
+  D - Character to check
+
+Returns:
+  DF=0 - Character is non-alphabetic
+  DF=1 - Character is alphabetic

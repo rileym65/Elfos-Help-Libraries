@@ -1,0 +1,3 @@
+LOAD name
+
+  This command will load the LISP environment from the named file.

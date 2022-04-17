@@ -1,0 +1,6 @@
+O_CHDIR - Change directory
+Function: 324h
+  Args: RF = Pointer to pathname or buffer to place current path
+  Returns: DF=0 - Success
+           DF=1 - Failure
+                  D - Error code

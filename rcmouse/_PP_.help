@@ -1,0 +1,8 @@
+| - Else portion of conditional block
+
+Syntax:
+  [ ontrue | onfalse ]
+
+  This command separates the ontrue and onfalse portions of a conditional
+block.  See the '[' command for more information on conditional blocks
+

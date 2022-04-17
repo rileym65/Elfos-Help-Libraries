@@ -1,0 +1,22 @@
+Line Format:
+
+[*label] command {condition} : operands
+
+condition = Y | N | T | F | O | (expr) | (scomp)
+
+  In general whitespace is ignored.  the only require whitespace is
+between the line label and the command.  Everywhere else spaces me be
+added or omitted as desired
+
+  Line labels are optional and only need to be specified for a line if
+the line will be the target of a jump command.  All labels must begin
+with an asterisk (8) and then may contain any alphanumeric character.
+
+  The condition is also optional.  If no condition is specified then the
+line will be executed everytime that is is encountered.  If a condition
+exists then the line will only be executed if the condition is true
+
+Samples:
+*LOOP T      :Start of loop
+      C      :i=i+1
+      J(i<10):*LOOP

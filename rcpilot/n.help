@@ -1,0 +1,10 @@
+N - Display text if MATCHED flag is not set
+
+Syntax:
+  N:text
+
+  This command is equivalent to TN and will display text if the MATCHED
+flag is currently not set.  See T command for more information.
+
+Samples:
+  N:This will only be shown if MATCHED is not set

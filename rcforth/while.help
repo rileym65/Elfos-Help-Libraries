@@ -1,0 +1,13 @@
+WHILE    (B -- )          - Beginning of while-repeat loop
+
+Examples:
+
+Another uncontrolled loop is the WHILE REPEAT loop.  This loop has its
+test at the beginning, therefore if WHILE finds a 0 on the stack the loop
+will not even execute the first time:
+
+    ok 5 DUP WHILE DUP . 1 - DUP REPEAT CR
+    5 4 3 2 1 
+    ok 0 DUP WHILE DUP . 1 - DUP REPEAT CR
+    ok
+

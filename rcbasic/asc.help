@@ -1,0 +1,12 @@
+ASC(expr)
+
+  This function will return the ASCII value for the first character in the
+specified string expression.
+
+Examples:
+
+PRINT ASC("ABC")
+     65
+
+PRINT ASC("1")
+     49

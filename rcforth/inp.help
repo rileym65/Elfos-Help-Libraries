@@ -1,0 +1,11 @@
+INP       ( p -- v )          - Input data on a pecific port
+
+Example:
+    
+    4 INP . CR
+    108
+    ok
+
+Note: The result from INP will depend on what hardware is attached to your
+machine and what they are outputting to the 1802 input ports.
+

@@ -1,0 +1,10 @@
+OVER     (a b -- a b a)   - Copy 2nd stack value to top
+
+Examples:
+
+    1 2 3 OVER .
+    2 ok
+
+    1 4 5 OVER .  
+    4 ok
+

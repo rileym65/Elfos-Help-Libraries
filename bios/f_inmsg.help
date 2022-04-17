@@ -1,0 +1,10 @@
+F_INMSG - Type inline message to terminal
+
+Function: 0FF66h
+
+Args:
+  RE.1 - Baud constant
+  Bytes following call are output
+
+Returns:
+  None

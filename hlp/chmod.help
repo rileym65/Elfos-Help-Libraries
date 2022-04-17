@@ -1,0 +1,5 @@
+CHMOD - Change file flags
+
+Usage: chmod [options] file
+             +x  - Set file as exeuctable
+             -x  - Set file as non-executable

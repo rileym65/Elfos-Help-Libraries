@@ -1,0 +1,6 @@
+RMDIR - Remove a directory
+
+Usage: rmdir path
+             path  - Path of directory to remove
+
+Notes: The directory must be empty to remove it.

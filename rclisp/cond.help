@@ -1,0 +1,34 @@
+(COND (test1) (test2) ... (testn))
+
+  COND is Rc/LISP's only way of making descisions.  The COND form looks
+more complicated than it really is, but in essense its arguemnts are a
+series of 2-element lists in the form of:
+
+     ((test) (return))
+
+  Starting with the form 'test1' it will evaluate the 'test' portion, if
+it evaluates to non-NIL, then the 'return' is evaluated and returned as
+the result of the entire cond form.  If the 'test' portion of the 'test1'
+form fails then it will try the 'test' section of the 'test2' form, and
+so on until one of the tests succeeds.  If no test succeeds then NIL will
+be returned.
+
+Examples:
+
+(SET 'A 'A)
+(SET 'B '(A B C))
+(COND ( (CDR A)  (CDR A) )
+      ( (CDR B)  (CDR B) )
+      ( (T)      (NIL)   )
+)
+     (B C)
+  Here is an explanation of what happened here.  First it attempts to take
+the CDR of A, since A is bound to an atom, the CDR is NIL, so this test
+fails and it goes on to the next form.  The second form tests to see if
+it can take the CDR of B, which it can so it evaluates the second part of
+that form, which is just to return the CDR of B, which is (B C), that 
+ended the entire COND form.  Had the test of the second form failed it
+would have fallen through to the third one, which (T) will always evaluate
+to T so the result would have been NIL.
+       
+

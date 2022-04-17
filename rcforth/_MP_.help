@@ -1,0 +1,15 @@
+*        (a b -- c) - Multiply top 2 stack entries
+
+  This command takes the top two stack values, multiplies them together
+and places the results back on the stack.
+
+Examples:
+
+     4 5 * .
+     20 ok
+
+     3 4 * .
+     12 ok
+
+     16000 12 * . CR
+     -4608              <- note negative number due to 16 bit arithmetic

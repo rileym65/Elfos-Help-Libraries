@@ -1,0 +1,15 @@
+IF       (B -- )          - Beginnig of IF-ELSE-THEN structure
+
+  IF takes the top of stack and evaluates it for non-zero.  If the value
+is non-zero then commands following IF will be executed.  If the value was
+0 then execution continues following the matching THEN.
+
+Examples:
+
+    ok 1 IF 1 . THEN 2 . CR
+    1 2
+
+    ok 0 IF 1 . THEN 2 . CR
+    2
+    ok
+

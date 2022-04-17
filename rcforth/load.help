@@ -1,0 +1,5 @@
+LOAD file      ( -- )          - Load a forth program
+
+  This command loads the FORTH environment from the specified file.  Any
+existing words will be removed during this process.
+

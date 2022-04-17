@@ -1,0 +1,8 @@
+^ - Exit loop
+
+Syntax:
+  ^
+
+  This command will pop the top value of the stack, if the value is zero
+then the enclosing loop will be terminated.  See the '(' for a sample
+

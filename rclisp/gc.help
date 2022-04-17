@@ -1,0 +1,4 @@
+GC
+
+  This command runs Rc/LISP's garbage collector, which will free orphaned
+nodes.

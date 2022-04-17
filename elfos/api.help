@@ -1,0 +1,16 @@
+Elf/OS API calls
+Name          Function     Description
+O_OPEN        0306h        Open file
+O_CLOSE       0312h        Close file
+O_WRITE       030Ch        Write to file
+O_READ        0309h        Read from file
+O_SEEK        030Fh        Change file position
+O_RENAME      031Bh        Rename a file
+O_DELETE      0318h        Delete a file
+O_EXEC        031Eh        Execute a program
+O_OPENDIR     0315h        Open directory for reading
+O_MKDIR       0321h        Make directory
+O_CHDIR       0324h        Change/Get current directory
+O_RMDIR       0327h        Remove directory
+O_RDLUMP      032Ah        Read value from LAT table
+O_WRLUMP      032Dh        Write value into LAT table

@@ -1,0 +1,26 @@
+U - Call subroutine
+
+Syntax:
+  U:*label
+  U:expr
+  U:expr,*label{,*label}{,...}
+
+  This command is used to call a subroutine.  When a subroutine is called
+the address of the next command line will be stored on the call stack, a
+subsequent E: command will return from the subroutine.  In the first form
+of this command control is simply transfered to the subroutine with the
+specified label
+
+  In the second form of this routine, expr is evaulated and a jump is made
+to the line containing the label equal to the result
+
+  In the third form of this routine, expr is evaluated and the result is
+used to select a label to jump to.  If expr evaluates to 1 then the first
+label with be called, if 2 then the second label is called, and so forth.
+If the result of expr is 0 or greater than the number of labels provided
+then no call will occur and execution will continue with the next line.
+
+Samples:
+  U:*sub1              - Will transfer control to line containing *sub1
+
+  U:i,*sa,*sb,*sc      - If i=2 then control will be transferred to *sb

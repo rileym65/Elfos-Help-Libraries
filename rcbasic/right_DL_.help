@@ -1,0 +1,9 @@
+RIGHT$(sexpr,expr)
+
+  This function will return the specified number of characters on the right
+side of the specified string expression.
+
+Example:
+
+PRINT RIGHT$("ABCDEFG",3)
+     EFG

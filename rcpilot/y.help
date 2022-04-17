@@ -1,0 +1,10 @@
+Y - Display text if MATCHED flag is set
+
+Syntax:
+  Y:text
+
+  This command is equivalent to TY and will display text if the MATCHED
+flag is currently set.  See T command for more information.
+
+Samples:
+  Y:This will be shown if the MATCHED flag is set

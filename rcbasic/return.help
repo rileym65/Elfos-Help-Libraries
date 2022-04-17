@@ -1,0 +1,21 @@
+RETURN
+
+  This command will return execution back to the statement following the last
+executed GOSUB command.
+
+  If there are no more GOSUB targets left on the stack then an error 4 will
+result and the program will be terminated.
+
+Example:
+
+10 PRINT "A"
+20 GOSUB 100
+30 PRINT "C"
+99 END
+100 PRINT "B"
+110 RETURN
+
+RUN
+     A
+     B
+     C

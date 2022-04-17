@@ -1,0 +1,13 @@
+OUT       (p v -- )          - Output data on a specific port
+
+Examples:
+    
+    4 10 OUT
+    ok
+
+    4 127 OUT
+    ok
+
+   In both of these examples, if your machine has data displays connected
+to port 4, then the values will appear on your data displays
+

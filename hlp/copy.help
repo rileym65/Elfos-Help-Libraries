@@ -1,0 +1,5 @@
+COPY - Copy a file
+
+Usage: copy src dest
+      src          - Filename of file to copy
+      dest         - Destination pathname

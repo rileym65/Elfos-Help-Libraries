@@ -1,0 +1,13 @@
+OR      (a b -- c) - Logically OR  the top 2 stack values
+
+  This command takes the top two stack values, performs a logical OR and
+places the results back on the stack.
+
+Examples:
+
+    5 2 OR  .
+    7 ok
+
+    8 4 OR .
+    12 ok
+

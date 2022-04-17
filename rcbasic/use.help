@@ -1,0 +1,8 @@
+USR(address)
+USR(address,expr)
+
+  The USR function is used to call a machine language subroutine.  The address
+argument is required in both versions and specifies the address of the ML
+routine to be executed.  If the second argument is provided, this value will
+be loaded into RF prior to the ML routine being called.  The return value of
+this function is the value in RF when the ML routine returns.

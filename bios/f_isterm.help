@@ -1,0 +1,10 @@
+F_ISTERM - Check for termination character (any character that is not f_alnum)
+
+Function: 0FF7Eh
+
+Args:
+  D - Character to check
+
+Returns:
+  DF=0 - Character is non-terminator
+  DF=1 - Character is terminator

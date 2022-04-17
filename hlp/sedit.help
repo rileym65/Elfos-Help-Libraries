@@ -1,0 +1,18 @@
+Usage: sedit
+
+Commands available inside sedit:
+
+L                  - Show low 256 bytes of 512 byte loaded sector
+H                  - Show high 256 bytes of 512 byte loaded sector
+Rsect              - Read specified sector (sector is in hex)
+N                  - Load next sector
+P                  - Load previous sector
+D                  - Display current sector number
+Eofs byte byte ... - Enter bytes int sector buffer at specified offset
+W                  - Write current 512 byte sector buffer back to disk
+Aau                - Load first sector of specified AU
+Cau                - Show the AU chain for the specified AU
+Q                  - Quit back to Elf/OS
+
+Note: The offset used with the E command is relative to the sector buffer
+      used by SEDIT, and not an absolute RAM address

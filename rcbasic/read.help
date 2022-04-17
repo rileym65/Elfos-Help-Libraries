@@ -1,0 +1,30 @@
+READ var,var,var,...
+
+  The READ statement will read values from the current DATA pointer into the
+specified variables.  It is not necessary to match the number of variables in
+the READ list to a specific DATA statement.  For all practical purposes it
+does not matter how many DATA statements the data is spread over, it is all
+considered linear to the READ statement.
+
+  If an attempt to read a data element beyond the last DATA statement is made
+then an error 9 will occur.
+
+  The READ/DATA set of statements makes it easy to initialize variables.
+
+Examples:
+
+10 DATA 5,10,15,20,25,30
+20 READ A,B,C
+30 PRINT A,B,C
+40 READ A,B
+50 PRINT A,B
+60 READ A
+70 PRINT A
+80 READ A
+
+RUN
+     5       10       15
+     20      25
+     30
+
+     ERROR:9 in line 80

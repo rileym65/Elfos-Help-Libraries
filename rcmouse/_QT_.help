@@ -1,0 +1,14 @@
+" - Print text
+
+Syntax:
+
+  "text"
+
+  This command will output all the text until the next " mark.  Any !
+encountered will case a cr/lf to be output
+
+Samples:
+  "Print first line!Print second line"
+    Print first line
+    Print second line
+

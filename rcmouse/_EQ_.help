@@ -1,0 +1,16 @@
+= - Check if equal
+
+Syntax:
+  =
+
+  This command will pop the top two values from the stack and compare them,
+if they are equal then 1 will be pushed back to the stack, else 0 will
+be pushed back
+
+Samples:
+  4 5 = !
+    0
+
+  4 4 = !
+    1
+

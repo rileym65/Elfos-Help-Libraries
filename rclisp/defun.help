@@ -1,0 +1,22 @@
+(DEFUN name (arg1 ... argn) (form))
+
+  The DEFUN function allows you to define functions, and is the primary
+way in which your produce LISP programs.  Args must be atoms and may be
+quoted if you want to prevent the LISP evaluator from evaulating them at
+runtime.  'form' is what will be executed by this function.
+
+Examples:
+
+(DEFUN CADR (A) (CAR (CDR A)))
+     (LAMBDA (A) (CAR (CDR A)))
+(CADR '(A B C D))
+     B
+
+(DEFUN SETQ ('A B) (SET A B))
+     (LAMBDA ('A B) (SET A B))
+(SETQ A '(A B C))
+     (A B C)
+  In this last example, the A is quoted in the function definition which
+prevents the LISP evaluator from evaluating this argument when the function
+is used.  Because of this when we used the SETQ function we did not have
+to quote the 'A like you would have to if you used the SET function.

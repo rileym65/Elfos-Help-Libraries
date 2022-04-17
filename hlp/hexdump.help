@@ -1,0 +1,4 @@
+HEXDUMP - Show contents of a file in hex format
+
+Usage: hexdump file
+               file - File to show the contents of

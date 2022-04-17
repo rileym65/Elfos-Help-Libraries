@@ -1,0 +1,12 @@
+' - Push character to stack
+
+Syntax:
+  'char
+
+  This command will take the next character in the program stream and
+push its ASCII value onto the stack
+
+Samples:
+  '1 !
+    49
+

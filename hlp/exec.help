@@ -1,0 +1,4 @@
+EXEC - Excecute a program already in memory
+
+Usage: exec addr
+            addr   - Address to begin execution at

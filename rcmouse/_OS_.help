@@ -1,0 +1,25 @@
+[ - Start of conditional execution
+
+Syntax:
+  [ ontrue ]
+  [ ontrue | onfalse ]
+
+  This command will pop the top value of the stack and if it is non-zero
+the commands following the '[' command will be executed.  If it is zero
+then if the '[' ']' contains a '|' command, commands following the '|'
+command will be executed, otherwise all commands between the '[' anmd ']'
+will be skipped
+
+Samples:
+  "A" 0 [ "B" ] "C"
+    AC
+
+  "A" 1 [ "B" ] "C"
+    ABC
+
+  "A" 0 [ "B" | "C" ] "D"
+    ACD
+
+  "A" 1 [ "B" | "C" ] "D"
+    ABD
+

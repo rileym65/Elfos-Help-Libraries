@@ -1,0 +1,11 @@
+CR         - print a CR/LF pair
+
+Examples:
+
+    ok 1 1 . CR 
+    2
+    ok
+
+    ok 1 1 .
+    2 ok
+

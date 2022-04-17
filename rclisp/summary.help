@@ -1,0 +1,34 @@
+Usage: rclisp
+
+Supported Dialect:
+------------------
+(CAR arg)                   - Return car (or head) of list
+(CDR arg)                   - Return cdr (or tail) of list
+(EQ arg1 arg2)              - T if args are at same address, else NIL
+(CONS arg1 arg2)            - Create a consing cell
+(SET arg1 arg2)             - Bind arg2 to arg1 (arg1 must eval to an atom)
+(PRINT arg)                 - Print arg
+(ATOM arg)                  - T if arg is an atom, else NIL
+(BOUNDP arg)                - T if args is bound, else NIL
+(T)                         - Returns T
+(NIL)                       - Returns NIL
+(EVAL arg)                  - Evaluate arg
+(NULL arg)                  - T if arg is NIL, else NIL
+(LIST arg arg ...)          - Create a list
+(REVERSE arg)               - Produce a reversed list of arg
+(COND (form) (form) ...)    - Consitional form
+(DEFUN name (args) (form))  - Define a function
+(RETURN arg)                - Return argument
+(ADD arg1 arg2)             - Numerical add of arg1 and arg2
+(SUB arg1 arg2)             - Numerical subtract, arg1-arg2
+(LESSP arg1 arg2)           - T is arg1 numerically less than arg2
+
+Commands:
+---------
+OBLIST                      - Print the object list
+FREE                        - Print the amount of free memory
+GC                          - Force garbage collection
+BYE                         - Return to Elf/OS
+LOAD name                   - Load the specified file
+SAVE name                   - Save environment to specified file
+CLEAR                       - Clear the LISP environment

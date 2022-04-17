@@ -1,0 +1,4 @@
+CHDIR - Change/View current directory
+
+Usage: chdir       - Show current directory
+       chdir path  - Change current directory to specified path

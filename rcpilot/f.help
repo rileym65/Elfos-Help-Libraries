@@ -1,0 +1,15 @@
+F - Read EF flags
+
+Syntax:
+  F:var
+
+  This command will read the CDP1802's EF flags and set var to a value
+indicating which flags are set:
+
+    bit 0 - EF1 is set
+    bit 1 - EF2 is set
+    bit 2 - EF3 is set
+    bit 3 - EF4 is set
+
+Samples:
+  F:flags       - would read the EF flags and set variable #flags

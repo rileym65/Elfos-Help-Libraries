@@ -1,0 +1,10 @@
+F_STRCPY - String copy
+
+Function: 0FF18h
+
+Args:
+  RF - Pointer to source ASCIIZ
+  RD - Pointer to destination string
+
+Returns:
+  None

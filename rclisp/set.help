@@ -1,0 +1,20 @@
+(SET arg1 arg2)
+
+  The SET command will bind arg2 to arg1.  arg1 must evaluate to an atom.
+
+Examples:
+
+(SET 'A '(A B C))
+     (A B C)
+
+(SET 'A 'B)
+     B
+
+(SET (CAR '(C D E)) '(A B))
+     (A B)
+(EVAL 'C)
+     (A B)
+  This last example shows how the LISP evaluator evaluates areguments.
+SET requires arg1 to be an atom, in this example arg1 was (CAR '(C D E)),
+this gets evaluated and results in the atom of C, which is then bound to
+(A B)

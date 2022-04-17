@@ -1,0 +1,16 @@
+C - Compute
+
+Syntax:
+  C:var=expr
+  C:$var=sexpr
+
+  This command will allow you to perform computations.  In the first form
+the value of the expression evaluation will be written to var.  In the
+second form the string concatenation of sexpr will be written to the
+string variable specified by $var
+
+Samples:
+  C:i=(2+3*(4+5))*3             - Would end up setting i to 87
+
+  C:$s="Hello "+$name           - Would set $s to 'Hello ' plus whatever
+                                  is in $name

@@ -1,0 +1,4 @@
+HIMEM - Show/Set High Memory pointer
+
+Usage: himem       - Show current high memory pointer
+       himem addr  - Set high memory pointer to addr

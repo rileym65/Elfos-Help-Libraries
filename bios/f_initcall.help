@@ -1,0 +1,12 @@
+F_INITCALL - Initialize SCALL and SRET
+
+Function: 0FF3Fh
+
+Args:
+  R6 - Return address
+
+Returns:
+  R4 - Call vector for SCALL
+  R5 - Call vector for SRET
+
+Notes: This function is invoked with a long branch (LBR) and not a call

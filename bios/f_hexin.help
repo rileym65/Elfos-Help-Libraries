@@ -1,0 +1,10 @@
+F_HEXIN - Convert ASCII hex to binary
+
+Function: 0FF45h
+
+Args:
+  RF - Pointer to hex ASCIIZ
+
+Returns:
+  RD - Binary representation of number
+  RF - Pointer to first non-hex character

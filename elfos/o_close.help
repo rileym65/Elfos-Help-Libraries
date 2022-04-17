@@ -1,0 +1,6 @@
+O_CLOSE - Close file
+Function: 312h
+  Args: RD = Pointer to file descriptor
+  Returns: DF=0 - Success
+           DF=1 - Failure
+                  D - Error code

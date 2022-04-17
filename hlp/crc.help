@@ -1,0 +1,3 @@
+CRC - Display CRC-16 value for a file
+
+Usage: CRC file  - Compute and show CRC-16 for file
