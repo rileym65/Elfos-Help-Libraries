@@ -1,0 +1,5 @@
+TOUCH - Update a file with the current date and time information
+
+Usage: touch file
+             file - file to update with current date and time
+

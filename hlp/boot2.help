@@ -1,0 +1,61 @@
+boot2.bin - Secondary Boot Loader
+
+The secondary boot loader loads the kernel from the /os/kernel file 
+instead of the KIB reserved area.  This makes it easier to upgrade or
+change kernels, just copy the new kernel over /os/kernel.
+
+Warning: 
+
+Extreme care must be used when installing the Secondary Boot Loader.
+If the /os/kernel file does not contain a valid kernel image then 
+your disk will become unbootable. If an error occurs during 
+installation then your disk will likely become unbootable.
+
+Installation:
+
+1. Run the version command with no parameters to verify kernel version
+   348 or higher is installed.
+     a) ver
+     b) You should see this output:
+        4.1.0 Build 348 8/23/2021
+     c) If the Build number is less than 348, 
+        STOP! and install the latest kernel version before proceeding. 
+
+2. Create an os directory underneath root.
+     a) chdir /
+     b) mkdir os
+
+3. Change into the /os directory and create a kernel file
+     a) chdir /os
+     b) kread kernel
+ 
+4. Check the /os directory and verify that the kernel file was created.
+   If there is no /os/kernel file, STOP! and Redo the above instructions.
+     a) chdir /os
+     b) dir
+
+5. Change into the /bin directory and install the secondary boot program.
+     a) chdir /bin
+     b) sys boot2.bin
+
+6. The system will now install the new boot loader, and reboot using the
+   kernel file in /os/kernel.
+
+
+Notes: 
+
+  A) In the future, for any new kernel updates you should copy the new 
+     kernel file over /os/kernel rather than using the sys command.
+
+
+  B) You can hide the /os directory if you wish.
+    1. chdir /
+    2. chmod +h os
+
+  C) You can use setboot2 to only load two sectors when booting. 
+     This makes boot up slightly faster.
+    1. setboot2
+
+  D) If you wish to undo setboot2 and load all 16 sectors when booting,
+     run the setboot command.
+    1. setboot
