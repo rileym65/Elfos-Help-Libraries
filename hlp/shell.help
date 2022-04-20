@@ -1,0 +1,7 @@
+SHELL - Integrated shell utility. 
+
+Usage: shell
+
+Note: This version contains the following command aliases:
+       cd (chdir), cp (copy), rm (del), ls (dir), md (mkdir),
+       rn (rename), rd (rmdir), cat (type) 

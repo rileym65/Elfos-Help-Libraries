@@ -1,0 +1,6 @@
+SETBOOT - Install the 16-sector sector 0 boot loader.
+
+Usage: setboot
+
+Notes: Use after installing the Secondary Boot Loader boot2.bin.
+       See 'help boot2' for more information.
