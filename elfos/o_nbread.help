@@ -1,0 +1,12 @@
+O_NBREAD - Non-block read character from the terminal (optional)
+
+Function: 0375h
+
+Args:
+  RE.1 - Baud constant
+
+Returns:
+  D - Read character
+
+Notes: Vector for console input via f_nbread bios function.
+       Optional function.

@@ -1,0 +1,13 @@
+O_INITCALL - Initialize SCALL and SRET
+
+Function: 0363h
+
+Args:
+  R6 - Return address
+
+Returns:
+  R4 - Call vector for SCALL
+  R5 - Call vector for SRET
+
+Notes: Vector to bios f_initcall function.
+       This function is invoked with a long branch (LBR) and not a call

@@ -1,0 +1,10 @@
+O_WRMBOOT - Perform an Elf/OS Warm boot.
+
+Function: 0303h
+
+  Args: None
+
+  Returns: None
+
+Note: No memory pointers are reset. The stack pointer is reset and
+      the heap memory is culled.

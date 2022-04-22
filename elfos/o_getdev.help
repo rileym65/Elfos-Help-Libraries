@@ -1,0 +1,22 @@
+O_GETDEV - Get supported device list
+
+Function: 034eh
+
+Args:
+  [None]
+
+Returns:
+  RF - Device List 
+  Bit
+    0 - IDE 
+    1 - Floppy
+    2 - Bit-banged serial
+    3 - UART
+    4 - RTC
+    5 - NVR  
+    6 - Contains $F800 vector table
+    7 - Contains $F000 vector table
+    8 - f_nbread supported
+ 9-15 - reserved
+
+Note: Vector to get device list via f_getdev bios function.

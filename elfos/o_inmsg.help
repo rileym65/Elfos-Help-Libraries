@@ -1,0 +1,12 @@
+O_INMSG - Type inline message to terminal
+
+Function: 034bh
+
+Args:
+  RE.1 - Baud constant
+  Bytes following call are output
+
+Returns:
+  None
+
+Note: Vector for console output via bios f_inmsg function.

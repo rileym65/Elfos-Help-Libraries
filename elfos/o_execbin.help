@@ -1,0 +1,16 @@
+O_EXECBIN - Execute a program from the default exec directory
+
+Function: 0342h
+
+Args:
+  RF - command line
+  RA - pointer to arguments
+
+Returns:
+  RD - file descriptor
+  DF=0 - success 
+  DF=1 - error
+     D - Error code
+
+Notes: Vector to bios f_execbin function.
+       The system default execution directory is usually /bin.

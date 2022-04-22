@@ -1,0 +1,15 @@
+O_SETBD - Determine terminal baud rate
+
+Function: 0360h
+
+Args:
+  None
+
+Returns:
+  RE.1 - Baud constant
+
+Notes: Vector to bios f_setbd function. 
+       Waits for input from terminal, expecting either <CR> or <LF>.
+       <CR> - Use full duplex mode
+       <LF> - Use half duplex mode
+  

@@ -1,0 +1,12 @@
+O_MSG - Type message to terminal
+
+Function: 0333h
+
+Args:
+  RF - Pointer to ASCIIZ string
+  RE.1 - Baud constant
+
+Returns:
+ None
+
+Note: Vector for console output via the f_msg bios function.

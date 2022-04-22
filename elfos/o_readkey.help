@@ -1,0 +1,11 @@
+O_READKEY - Read character key from the terminal
+
+Function: 0336h
+
+Args:
+  RE.1 - Baud constant
+
+Returns:
+  D - Read character
+
+Note: Vector for console input via f_read bios function.

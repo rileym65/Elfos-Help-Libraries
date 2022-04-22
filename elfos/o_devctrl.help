@@ -1,0 +1,5 @@
+O_DEVCTRL - Reserved
+
+Function: 0369h
+
+Notes: Reserved - Hook for device control drivers

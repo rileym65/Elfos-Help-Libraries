@@ -1,5 +1,7 @@
 Elf/OS API calls
 Name          Function     Description
+O_CLDBOOT     0300h        Perform cold boot
+O_WRMBOOT     0303h        Perform  warm boot routine
 O_OPEN        0306h        Open file
 O_CLOSE       0312h        Close file
 O_WRITE       030Ch        Write to file
@@ -14,3 +16,50 @@ O_CHDIR       0324h        Change/Get current directory
 O_RMDIR       0327h        Remove directory
 O_RDLUMP      032Ah        Read value from LAT table
 O_WRLUMP      032Dh        Write value into LAT table
+O_TYPE        0330h        Type charcter to terminal, no translations
+O_MSG         0333h        Type a message to the terminal
+O_READKEY     0336h        Read character from the terminal
+O_INPUT       0339h        Input string for terminal 
+O_PRTSTAT     033ch        Get printer status
+O_PRINT       033fh        Print a character on printer
+O_EXECBIN     0342h        Execute program from default exec directory
+O_SETDEF      0345h        Change/show default exec directory
+O_KINIT       0348h        Reserved - DO NOT USE!!!
+O_INMSG       034bh        Type inline message to terminal
+O_GETDEV      034eh        Get supported devices
+O_GETTOD      0351h        Get time of day
+O_SETTOD      0354h        Set time of day
+O_INPUTL      0357h        Read string from terminal (variable buffer length)
+O_BOOT        035ah        Cold boot from IDE
+O_SETBD       0360h        Determine terminal baud rate
+O_INITCALL    0363h        Initialize SCALL and SRET
+O_BRKTEST     0366h        Check for serial break
+O_DEVCTRL     0369h        Reserved for device control drivers
+O_ALLOC       036ch        Allocate heap memory
+O_DEALLOC     036fh        Deallocate heap memory
+O_TERMCTRL    0372h        Reserved for terminal control drivers
+O_MEMCTRL     0375h        Reserved for memory control drivers
+
+Useful Memory Locations:
+
+0400h  K_VER    - 3 bytes, Kernel version
+0403h  K_BUILD  - 2 bytes, Kernel build number
+0405h  K_BMONTH - 1 byte, Kernel build date Month
+0406h  K_BDAY   - 1 byte, Kernel build date Day
+0407h  K_BYEAR  - 2 bytes, Kernel build date Year
+0442h  K_HIMEM  - 2 bytes, Highest address of user space. deprecated.
+0465h  K_LOWMEM - 2 bytes - Lowest memory heap can use
+0467h  K_RETVAL - 1 byte - D at last program end
+0468h  K_HEAP   - 2 bytes - Current bottom of heap
+0470h  K_CLKFREQ - 2 bytes - Clock frequency, not guaranteed to be set.
+
+Internal Hooks.  Note, these should not be used by general applications
+0444h  D_IDERESET - Passthrough to F_IDERESET.  See BIOS for details
+0447h  D_IDEREAD  - Passthrough to F_IDEREAD.  See BIOS for details
+044Ah  D_IDEWRITE - Passthrough to F_IDEWRITE.  See BIOS for details
+044Dh  D_REAPHEAP - Calls heap reaper to clean non-permanent heap blocks
+0450h  D_PROGEND  - Captures execution between O_WRMBOOT and command loop
+0453h  D_LMPSIZE  - Get lump size
+
+Other memory locations.
+03D0h  O_VIDEO - 1 byte - Pixie video buffer page

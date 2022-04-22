@@ -1,0 +1,9 @@
+O_DEALLOC - Dealloc heap memory
+
+Function: 036fh
+
+Args:
+  RF - Address of memory to free
+
+Returns:
+  [None]

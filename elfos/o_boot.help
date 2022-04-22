@@ -1,0 +1,9 @@
+O_BOOT - Cold boot from IDE device
+
+Function: 035ah
+
+  Args: None
+
+  Returns: None
+
+Note: Vector to f_boot bios function.

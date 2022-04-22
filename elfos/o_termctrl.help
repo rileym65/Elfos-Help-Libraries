@@ -1,0 +1,5 @@
+O_TERMCTRL - Reserved
+
+Function: 0372h
+
+Notes: Reserved - Hook for terminal control drivers

@@ -1,0 +1,12 @@
+O_TYPE - Type a character to terminal, no translations
+
+Function: 0330h
+
+Args:
+  D - Character to type
+  RE.1 - Baud constant
+
+Returns:
+  None
+
+Note: Vector for console output via f_tty bios function.
