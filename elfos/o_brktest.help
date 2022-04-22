@@ -1,0 +1,12 @@
+O_BRKTEST - Check for serial break
+
+Function: 0366h
+
+Args:
+  [None]
+
+Returns:
+  DF=0 - Break not asserted
+  DF=1 - Break asserted
+
+Note: Vector for f_brktest bios function. 

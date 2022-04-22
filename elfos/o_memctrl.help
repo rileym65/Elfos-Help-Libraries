@@ -1,0 +1,5 @@
+O_MEMCTRL - Reserved
+
+Function: 0375h
+
+Notes: Reserved - Hook for memory control drivers

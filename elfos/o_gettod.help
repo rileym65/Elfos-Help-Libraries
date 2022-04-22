@@ -1,0 +1,14 @@
+O_GETTOD - Read Real Time Clock (RTC) data
+
+Function: 0351h
+
+Args:
+  RF - Pointer to buffer for time
+
+Returns:
+  DF=0 - Success
+  DF=1 - Error
+     D=0 - no RTC
+     D=1 - bad time
+
+Note: Vector for f_gettod bios function. 

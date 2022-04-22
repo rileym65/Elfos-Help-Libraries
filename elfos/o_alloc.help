@@ -1,0 +1,32 @@
+O_ALLOC - Allocate heap memory.
+
+Function: 036ch
+
+Args:
+  RC - Amount of memory requested
+  R7.0 - Flags (bits)
+         0 - reserved
+         1 - reserved
+         2 - Permenent block
+         3 - reserved
+         4 - reserved
+         5 - reserved
+         6 - reserved
+         7 - reserved
+
+  R7.1 - Alignment (value)
+           0 - No alignment
+           1 - Even address
+           3 - 4-byte boundary
+           7 - 8-byte boundary
+          15 - 16-byte boundary
+          31 - 32-byte boundary
+          63 - 64-byte boundary
+         127 - 128-byte boundary
+         255 - Page boundary
+
+Returns:
+    RF - Address of memory
+  DF=0 - Sucess
+  DF=1 - Fail
+

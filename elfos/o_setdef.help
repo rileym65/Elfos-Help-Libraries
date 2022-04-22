@@ -1,0 +1,14 @@
+O_SETDEF - Change/show the default exec directory
+
+Function: 0345h
+
+Args:
+  RF - path
+
+Returns:
+  DF=0 - success 
+  DF=1 - error
+     D - error code
+
+Notes: The system default execution directory is usually /bin.
+

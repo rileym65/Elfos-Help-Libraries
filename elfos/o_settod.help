@@ -1,0 +1,12 @@
+O_SETTOD - Set Real Time Clock (RTC) data
+
+Function: 0354h
+
+Args:
+  RF - Pointer to buffer for time
+
+Returns:
+  DF=0 - Success
+  DF=1 - Error/no RTC
+
+Note: Vector for f_settod bios function. 

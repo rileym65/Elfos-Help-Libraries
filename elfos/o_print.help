@@ -1,0 +1,10 @@
+O_PRINT -Print a character on the printer
+
+Function: 033fh
+
+Args:
+  D - Character to print
+
+Returns:
+  None
+

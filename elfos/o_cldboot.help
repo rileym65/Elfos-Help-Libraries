@@ -1,0 +1,8 @@
+O_CLDBOOT - Perform an Elf/OS Cold boot
+
+Function: 0300h
+  Args: None
+
+  Returns: None
+
+Note: Cold boot initializes all vectors and data pointers.

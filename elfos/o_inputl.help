@@ -1,0 +1,14 @@
+O_INPUTL - Read string from terminal (variable buffer length)
+
+Function: 0357h
+
+Args:
+  RF - Pointer to input buffer
+  RC - Maximum allowed input characters
+  RE.1 - Baud constant
+
+Returns:
+  DF=0 - Input finished with <ENTER>
+  DF=1 - Input finished with <CTRL><C>
+
+Note: Vector to read string via f_inputl bios function.

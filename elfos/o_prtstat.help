@@ -1,0 +1,10 @@
+O_PRINT - Get the printer status.
+
+Function: 033ch
+
+Args:
+  None
+
+Returns:
+  D - printer status byte
+
