@@ -29,13 +29,19 @@ FILES=\
 	rmdir.hlp\
 	save.hlp\
 	sedit.hlp\
+    boot2.hlp\
+    setboot.hlp\
+    setboot2.hlp\
+    shell.hlp\
 	stat.hlp\
 	sys.hlp\
+    touch.hlp\
 	type.hlp\
 	ver.hlp\
 	visual02.hlp\
 	xr.hlp\
-	xs.hlp
+	xs.hlp   
+
 
 .SUFFIXES: .help .hlp
 
